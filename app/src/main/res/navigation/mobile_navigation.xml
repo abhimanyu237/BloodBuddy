@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home"
+    >
+
+
+    <fragment android:id="@+id/navigation_home"
+        android:name="com.example.bloodbuddy.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home"/>
+
+   <fragment android:id="@+id/navigation_request"
+        android:name="com.example.bloodbuddy.ui.request.RequestFragment"
+        android:label="Request"
+        tools:layout="@layout/fragment_request"/>
+
+   <fragment android:id="@+id/navigation_donate"
+        android:name="com.example.bloodbuddy.ui.donate.DonateFragment"
+        android:label="Donate"
+        tools:layout="@layout/fragment_donate"/>
+
+
+
+
+
+
+
+
+</navigation>
