@@ -2,6 +2,10 @@
   <library name="Gradle: androidx.arch.core:core-runtime:2.0.0@aar">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d8a2fa2fab3869b7293d51c10b767260/transformed/core-runtime-2.0.0/jars/classes.jar!/" />
+<<<<<<< HEAD
+=======
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d8a2fa2fab3869b7293d51c10b767260/transformed/core-runtime-2.0.0/res" />
+>>>>>>> 02533c0b411b64878057ef03972480522012d7ed
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d8a2fa2fab3869b7293d51c10b767260/transformed/core-runtime-2.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />

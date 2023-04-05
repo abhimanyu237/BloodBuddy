@@ -2,6 +2,10 @@
   <library name="Gradle: androidx.test.ext:junit:1.1.5@aar">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/91baedc91dfa4ba94fb9f1cb2e3aeb69/transformed/junit-1.1.5/jars/classes.jar!/" />
+<<<<<<< HEAD
+=======
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/91baedc91dfa4ba94fb9f1cb2e3aeb69/transformed/junit-1.1.5/res" />
+>>>>>>> 02533c0b411b64878057ef03972480522012d7ed
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/91baedc91dfa4ba94fb9f1cb2e3aeb69/transformed/junit-1.1.5/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
