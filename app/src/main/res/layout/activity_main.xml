@@ -56,11 +56,13 @@
         android:id="@+id/navigation_view"
         app:menu="@menu/navigration_drawer"
         android:fitsSystemWindows="true"
-        app:headerLayout="@layout/drawer_header"
+
         app:itemTextAppearance="?android:textAppearanceMedium"
         android:layout_gravity="start"
         />
 </androidx.drawerlayout.widget.DrawerLayout>
+
+<!--    app:headerLayout="@layout/drawer_header"-->
 
 
 

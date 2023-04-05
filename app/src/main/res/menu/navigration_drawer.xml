@@ -3,23 +3,24 @@
 
     <item android:id="@+id/navigation_name1"
         android:title="name1"
-        android:icon="@drawable/ic_name1"
+
         />
     <item android:id="@+id/name2"
         android:title="name2"
-        android:icon="@drawable/name2"
+
         />
     <item android:id="@+id/navigation_name3"
         android:title="name3"
-        android:icon="@drawable/ic_name3"
+
         />
     <item android:id="@+id/navigation_name4"
         android:title="name4"
-        android:icon="@drawable/ic_name4"
+
         />
     <item android:id="@+id/navigation_name5"
         android:title="name5"
-        android:icon="@drawable/ic_name5"
+
         />
 
 </menu>
+<!--    android:icon="@drawable/ic_name1"-->
