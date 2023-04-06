@@ -21,13 +21,16 @@ public class Dialog {
         builder.setCancelable(false);
         dialog = builder.create();
         dialog.show();
+
     }
 
     public void Dismiss()
     {
         dialog.dismiss();
     }
+
 }
+
 
 //You can use it as :
 // dialog =new Dialog(LoginActivity.this);  //now dialog start showing

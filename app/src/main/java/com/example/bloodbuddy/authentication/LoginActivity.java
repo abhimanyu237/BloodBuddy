@@ -2,8 +2,9 @@ package com.example.bloodbuddy.authentication;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.fragment.DialogFragmentNavigatorDestinationBuilder;
 
-import android.app.Dialog;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 import com.example.bloodbuddy.MainActivity;
 import com.example.bloodbuddy.R;
 import com.example.bloodbuddy.SplashScreenActivity;
+import com.example.bloodbuddy.utils.Dialog;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.card.MaterialCardView;
@@ -45,7 +47,7 @@ public class LoginActivity extends AppCompatActivity {
     private Button send_otp_btn,verify_otp_btn;
     private EditText user_number,user_otp;
     private String VerificationId=null;
-    private Dialog dialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -92,12 +94,18 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void verifyOtp(String otp) {
+
+
        // Toast.makeText(this, VerificationId+"  +  "+otp, Toast.LENGTH_SHORT).show();
         PhoneAuthCredential credential = PhoneAuthProvider.getCredential(VerificationId, otp);
         signInWithPhoneAuthCredential(credential);
     }
 
     private void sendOtp(String number) {
+
+
+        Dialog dialog=new Dialog(LoginActivity.this);
+
 
 
         PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
@@ -110,7 +118,7 @@ public class LoginActivity extends AppCompatActivity {
                 // 2 - Auto-retrieval. On some devices Google Play services can automatically
                 //     detect the incoming verification SMS and perform verification without
                 //     user action.
-
+                dialog.Dismiss();
                 signInWithPhoneAuthCredential(credential);
             }
 
@@ -118,7 +126,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onVerificationFailed(@NonNull FirebaseException e) {
                 // This callback is invoked in an invalid request for verification is made,
                 // for instance if the the phone number format is not valid.
-
+               dialog.Dismiss();
                 if (e instanceof FirebaseAuthInvalidCredentialsException) {
                     // Invalid request
                 } else if (e instanceof FirebaseTooManyRequestsException) {
@@ -133,6 +141,8 @@ public class LoginActivity extends AppCompatActivity {
                 // The SMS verification code has been sent to the provided phone number, we
                 // now need to ask the user to enter the code and then construct a credential
                 // by combining the code with a verification ID.
+
+                dialog.Dismiss();
 
                 // Save verification ID and resending token so we can use them later
 
@@ -158,6 +168,9 @@ public class LoginActivity extends AppCompatActivity {
 
     private void signInWithPhoneAuthCredential(PhoneAuthCredential credential) {
 
+
+    Dialog dialog2=new Dialog(LoginActivity.this);
+
      //   Toast.makeText(this, "160", Toast.LENGTH_SHORT).show();
         auth.signInWithCredential(credential)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -166,11 +179,12 @@ public class LoginActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
 
-                            checkUser("+91"+user_number.getText().toString());
+                            checkUser("+91"+user_number.getText().toString(),dialog2);
 
                             // Update UI
                         } else {
                             // Sign in failed, display a message and update the UI
+                             dialog2.Dismiss();
                             Toast.makeText(LoginActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             if (task.getException() instanceof FirebaseAuthInvalidCredentialsException) {
                                 // The verification code entered was invalid
@@ -181,7 +195,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
-    private void checkUser(String number) {
+    private void checkUser(String number,Dialog dialog2) {
 
 
             // User is already authenticated, check if user data is saved in the database
@@ -189,6 +203,9 @@ public class LoginActivity extends AppCompatActivity {
             userRef.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                    dialog2.Dismiss();
+
                     if (dataSnapshot.exists()) {
                         // User data is saved in the database, navigate to main activity
                         startActivity(new Intent(LoginActivity.this, MainActivity.class));
@@ -202,6 +219,8 @@ public class LoginActivity extends AppCompatActivity {
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
                     // Handle database error if needed
+                    dialog2.Dismiss();
+                    Toast.makeText(LoginActivity.this, databaseError.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             });
 

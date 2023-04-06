@@ -7,6 +7,7 @@ import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import com.example.bloodbuddy.utils.Dialog;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -54,6 +55,10 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+
+
+
 
         db=FirebaseDatabase.getInstance();
         reference = db.getReference();
@@ -151,14 +156,21 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void storeInDataBase() {
+
+        Dialog dialog=new Dialog(RegisterActivity.this);
+
+
 //String phone_number, String name, String email, String dob, String blood_grp, String address
         UserData data = new UserData(phone_number,name,email,dob,blood_grp,address);
 
         reference.child("users").child(phone_number).setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
+
+                dialog.Dismiss();
                 if(task.isSuccessful())
                 {
+
                     Toast.makeText(RegisterActivity.this, "Register successfully", Toast.LENGTH_SHORT).show();
 
                     openMainActivity();
@@ -170,6 +182,8 @@ public class RegisterActivity extends AppCompatActivity {
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
+
+                dialog.Dismiss();
                 Toast.makeText(RegisterActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
 
             }
