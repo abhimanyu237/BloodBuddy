@@ -28,9 +28,10 @@
                         </option>
                         <option name="values">
                           <map>
+                            <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="890620" />
-                            <entry key="outputName" value="ic_baseline_dialpad_24" />
-                            <entry key="sourceFile" value="C:\Users\anujk\Downloads\undraw_login_re_4vu2.svg" />
+                            <entry key="outputName" value="ic_register" />
+                            <entry key="sourceFile" value="C:\Users\anujk\Downloads\undraw_fill_form_re_cwyf.svg" />
                           </map>
                         </option>
                       </PersistentState>

@@ -12,7 +12,7 @@
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="320dp"
-        android:background="#6C63FF"
+        android:background="@color/app_color"
         android:src="@drawable/ic_register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,49 +79,30 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="   Student Id"
-                    android:id="@+id/user_student_id"
-                    android:inputType="number"
-                    android:padding="12dp"
-
-                    />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-
-                >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="   Mobile number"
-                    android:id="@+id/user_mobile"
-                    android:inputType="number"
-                    android:padding="12dp"
-
-                    />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-
-                >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:hint="   Email"
                     android:id="@+id/user_email"
-                    android:inputType="textEmailAddress"
+
+                    android:padding="12dp"
+
+                    />
+                <!--                  android:inputType="emailAddress"-->
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="   DOB"
+                    android:id="@+id/user_dob"
+                    android:inputType="date"
                     android:padding="12dp"
 
                     />
@@ -139,14 +120,39 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="   Password"
-                    android:id="@+id/user_pass"
-                    android:inputType="textPassword"
+                    android:hint="   Blood Group"
+                    android:id="@+id/user_blood_grp"
+                    android:inputType="text"
                     android:padding="12dp"
 
                     />
 
             </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="   Address"
+                    android:id="@+id/user_address"
+                    android:inputType="text"
+                    android:padding="12dp"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
             <Button
                 android:id="@+id/reg_btn"
                 android:layout_width="match_parent"
@@ -155,34 +161,6 @@
                 android:text="Register"
                 />
 
-            <LinearLayout
-                android:layout_marginTop="8dp"
-                android:id="@+id/linear2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-
-
-                <TextView
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" Already Registered ?"/>
-
-
-
-                <TextView
-                    android:layout_marginLeft="8dp"
-                    android:id="@+id/click_here_for_login"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#6C63FF"
-                    android:text=" Click here"/>
-
-
-            </LinearLayout>
 
 
 
