@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "1039683896105",
-    "project_id": "bloodbuddy-60671",
-    "storage_bucket": "bloodbuddy-60671.appspot.com"
+    "project_number": "201275739571",
+    "project_id": "bloodbuddy-6091f",
+    "storage_bucket": "bloodbuddy-6091f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1039683896105:android:dfdfb4182ce2c6cf652d38",
+        "mobilesdk_app_id": "1:201275739571:android:63e3184f992a2ded908fc6",
         "android_client_info": {
           "package_name": "com.example.bloodbuddy"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1039683896105-k3ockhba1cth7djmtf4p4l7rccaja5ks.apps.googleusercontent.com",
+          "client_id": "201275739571-umrta85q7lggpcko12k1a36gokl67f59.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bloodbuddy",
+            "certificate_hash": "e249b3e3b02ef144c498fd8c086a0b5f62a3b5d6"
+          }
+        },
+        {
+          "client_id": "201275739571-g667qbrm5mssfj8j2g4qrh0kmgjsd9qg.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDERUyVd8mV8N1T98qRViR_K1TJPaG6JAA"
+          "current_key": "AIzaSyD2Ib36nWJ5RYVUar2ytyIjOucBhDpD12A"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1039683896105-k3ockhba1cth7djmtf4p4l7rccaja5ks.apps.googleusercontent.com",
+              "client_id": "201275739571-g667qbrm5mssfj8j2g4qrh0kmgjsd9qg.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

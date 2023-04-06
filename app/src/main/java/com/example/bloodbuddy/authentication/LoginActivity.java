@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.example.bloodbuddy.MainActivity;
 import com.example.bloodbuddy.R;
+import com.example.bloodbuddy.SplashScreenActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.card.MaterialCardView;
@@ -64,7 +65,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String number=user_number.getText().toString();
+             String number=user_number.getText().toString();
 
                 if(number==null)
                     Toast.makeText(LoginActivity.this, "Please enter your number", Toast.LENGTH_SHORT).show();
@@ -122,10 +123,7 @@ public class LoginActivity extends AppCompatActivity {
                     // Invalid request
                 } else if (e instanceof FirebaseTooManyRequestsException) {
                     // The SMS quota for the project has been exceeded
-                } else if (e instanceof FirebaseAuthMissingActivityForRecaptchaException) {
-                    // reCAPTCHA verification attempted with null Activity
-                }
-
+                } 
                 // Show a message and update the UI
             }
 
@@ -167,10 +165,9 @@ public class LoginActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
-                          //  Toast.makeText(LoginActivity.this, "167", Toast.LENGTH_SHORT).show();
-                          //  Toast.makeText(LoginActivity.this, user_number.getText().toString(), Toast.LENGTH_SHORT).show();
-                            checkUserExits(user_number.getText().toString());
-                           // Toast.makeText(LoginActivity.this, "169", Toast.LENGTH_SHORT).show();
+
+                            checkUser("+91"+user_number.getText().toString());
+
                             // Update UI
                         } else {
                             // Sign in failed, display a message and update the UI
@@ -183,44 +180,30 @@ public class LoginActivity extends AppCompatActivity {
                 });
     }
 
-    private void checkUserExits(String number ){
+
+    private void checkUser(String number) {
 
 
+            // User is already authenticated, check if user data is saved in the database
+            DatabaseReference userRef = FirebaseDatabase.getInstance().getReference().child("users").child(number);
+            userRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    if (dataSnapshot.exists()) {
+                        // User data is saved in the database, navigate to main activity
+                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                    } else {
+                        // User data is not saved in the database, navigate to register activity
+                        startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+                    }
+                    finish();
+                }
 
-  startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+                    // Handle database error if needed
+                }
+            });
 
-//        Toast.makeText(this, "In check user exits function", Toast.LENGTH_SHORT).show();
-//        DatabaseReference ref=FirebaseDatabase.getInstance().getReference();
-//
-//        ref.child("users").child("+919602769204").setValue("anuj");
-//
-//
-//
-//        ref.child("users").child(FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber()).addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot snapshot) {
-//
-//                if(snapshot.exists()) {
-//                   // dialog.Dismiss();
-//                    Toast.makeText(LoginActivity.this, "in snapshot ", Toast.LENGTH_SHORT).show();
-//                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
-//                    finish();
-//                }
-//                else
-//                {
-//                    //dialog.Dismiss();
-//                    Toast.makeText(LoginActivity.this, "199", Toast.LENGTH_SHORT).show();
-//                    startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
-//                    finish();
-//                }
-//
-//            }
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
-//                Toast.makeText(LoginActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
-//            }
-//        });
-//
-//
     }
 }

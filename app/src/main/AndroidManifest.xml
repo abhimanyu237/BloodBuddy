@@ -25,6 +25,7 @@
             </intent-filter>
 
 
+
         </activity>
         <activity
             android:name=".authentication.ForgetPasswordActivity"
@@ -34,7 +35,12 @@
             android:exported="false" />
         <activity
             android:name=".authentication.RegisterActivity"
-            android:exported="false" />
+            android:exported="false" >
+
+
+
+
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="false">
