@@ -21,6 +21,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+    <!-- ......................................Number layout ....................................   -->
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
@@ -43,32 +44,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="Login"
+                android:text=" Enter your Number"
                 />
 
 
-            <!--            <com.google.android.material.textfield.TextInputLayout-->
-            <!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_marginTop="8dp"-->
-
-            <!--                >-->
-
-            <!--                <com.google.android.material.textfield.TextInputEditText-->
-            <!--                    android:layout_width="match_parent"-->
-            <!--                    android:layout_height="wrap_content"-->
-            <!--                    android:hint="   Student Id"-->
-            <!--                    android:id="@+id/user_student_id"-->
-            <!--                    android:inputType="number"-->
-            <!--                    android:padding="12dp"-->
-
-            <!--                    />-->
-
-            <!--            </com.google.android.material.textfield.TextInputLayout>-->
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
@@ -79,94 +58,95 @@
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/user_number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="   Email"
-                    android:id="@+id/user_email"
-                    android:inputType="textEmailAddress"
+                    android:hint="  Number"
+                    android:drawableLeft="@drawable/ic_phone"
+
+                    android:inputType="number"
                     android:padding="12dp"
 
                     />
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
 
-                >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="   Password"
-                    android:id="@+id/user_pass"
-                    android:inputType="textPassword"
-                    android:padding="12dp"
-
-                    />
-
-            </com.google.android.material.textfield.TextInputLayout>
             <Button
-                android:id="@+id/login_btn"
+                android:id="@+id/send_Otp_btn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
-                android:text="Login"
+                android:text="Send OTP"
                 />
 
-
-
-
-
-            <LinearLayout
-                android:layout_marginTop="8dp"
-                android:id="@+id/linear2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-
-
-                <TextView
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" Not Yet Registered ?"/>
-
-
-
-                <TextView
-                    android:id="@+id/click_here_for_register"
-                    android:layout_marginLeft="8dp"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#6C63FF"
-                    android:text=" Click here"/>
-
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_gravity="center"
-                android:id="@+id/forget_pass"
-                android:layout_marginTop="12dp"
-                android:textStyle="bold"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#6C63FF"
-                android:text=" Forget Password"/>
-
         </LinearLayout>
-
-
 
     </com.google.android.material.card.MaterialCardView>
 
 
+<!-- ......................................Otp layout ....................................   -->
 
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:id="@+id/otpLayout"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginTop="-80dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Enter OTP"
+                    />
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="  OTP"
+
+                        android:drawableLeft="@drawable/ic_otp"
+                        android:id="@+id/user_otp"
+                        android:inputType="number"
+                        android:padding="12dp"
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/verifyOtp_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:text="Verify OTP"
+                    />
+
+            </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
