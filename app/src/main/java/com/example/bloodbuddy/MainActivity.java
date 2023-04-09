@@ -13,6 +13,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.example.bloodbuddy.authentication.LoginActivity;
@@ -40,8 +41,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//
-//        db=FirebaseDatabase.getInstance();
+/*      db=FirebaseDatabase.getInstance();
 //
 //        ref=db.getReference();
 //
@@ -69,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 //
-//
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
 //        getMenuInflater().inflate(R.menu.option_menu, menu);
@@ -91,37 +90,36 @@ public class MainActivity extends AppCompatActivity {
 //
 //        return true;
 //
-//    }
+*/   }
 
-//    @Override
-//    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//
-//        switch (item.getItemId()) {
-//
-//            case R.id.navigation_developer:
-//                Toast.makeText(this, "Developers", Toast.LENGTH_SHORT).show();
-//                break;
-//            case R.id.navigation_video:
-//                Toast.makeText(this, "Video", Toast.LENGTH_SHORT).show();
-//                break;
-//            case R.id.navigation_rate:
-//                Toast.makeText(this, "Rate Us", Toast.LENGTH_SHORT).show();
-//                break;
-//            case R.id.navigation_ebook:
-//                startActivity(new Intent(MainActivity.this, EbookActivity.class));
-//                break;
-//            case R.id.navigation_theme:
-//                Toast.makeText(this, "Theme", Toast.LENGTH_SHORT).show();
-//                break;
-//            case R.id.navigation_website:
-//                Toast.makeText(this, "Websites", Toast.LENGTH_SHORT).show();
-//                break;
-//            case R.id.navigation_share:
-//                Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
-//                break;
-//
-//
-//        }
+    public void onNavigationItemSelected(@NonNull MenuItem item) {
+
+        switch (item.getItemId()) {
+
+            case R.id.navigation_profile:
+                startActivity(new Intent(MainActivity.this, Navigation_Profile.class));
+                break;
+            case R.id.navigation_history:
+                startActivity(new Intent(MainActivity.this, Navigation_History.class));
+                break;
+            case R.id.navigation_request:
+                startActivity(new Intent(MainActivity.this, Navigation_Request.class));
+                break;
+            case R.id.navigation_rate_us:
+                startActivity(new Intent(MainActivity.this, Navigation_RateUs.class));
+                break;
+            case R.id.navigation_contact_us:
+                startActivity(new Intent(MainActivity.this, Navigation_ContactUs.class));
+                break;
+            case R.id.navigation_about_us:
+                startActivity(new Intent(MainActivity.this, Navigation_AboutUs.class));
+                break;
+            case R.id.navigation_help:
+                startActivity(new Intent(MainActivity.this, Navigation_Help.class));
+                break;
+
+        }
+    }
 //
 //
 //        return true;

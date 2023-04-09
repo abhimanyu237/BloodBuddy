@@ -56,7 +56,7 @@
         android:id="@+id/navigation_view"
         app:menu="@menu/navigration_drawer"
         android:fitsSystemWindows="true"
-
+         app:itemIconTint="@color/app_color"
         app:itemTextAppearance="?android:textAppearanceMedium"
         android:layout_gravity="start"
         />
