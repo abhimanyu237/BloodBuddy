@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-/*      db=FirebaseDatabase.getInstance();
+//      db=FirebaseDatabase.getInstance();
 //
 //        ref=db.getReference();
 //
@@ -54,45 +54,44 @@ public class MainActivity extends AppCompatActivity {
 
 //        auth=FirebaseAuth.getInstance();
 //
-//        drawerLayout = findViewById(R.id.drawerLayout);
+        drawerLayout = findViewById(R.id.drawerLayout);
 //        navigationView = findViewById(R.id.navigation_view);
 //
-//        toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.start, R.string.close);
-//
-//        drawerLayout.addDrawerListener(toggle);
-//        toggle.syncState();
-//
-//        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
-//
+        toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.nav_open, R.string.nav_close);
+////
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+////
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+////
 //        navigationView.setNavigationItemSelectedListener(this);
-//
+////
 //        NavigationUI.setupWithNavController(bottomNavigationView, navController);
 
 
     }
-//
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.option_menu, menu);
-//        return true;
-//    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.option_menu, menu);
+        return true;
+    }
 
 
-//    @Override
-//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-//
-//        if(toggle.onOptionsItemSelected(item))
-//            return true;
-//
-//        if(item.getItemId()==R.id.logout) {
-//            auth.signOut();
-//            openLogin();
-//
-//        }
-//
-//        return true;
-//
-*/   }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        if(toggle.onOptionsItemSelected(item))
+            return true;
+
+        if(item.getItemId()==R.id.logout) {
+            auth.signOut();
+            openLogin();
+
+        }
+
+        return true;
+    }
 
     public void onNavigationItemSelected(@NonNull MenuItem item) {
 
@@ -157,13 +156,9 @@ public class MainActivity extends AppCompatActivity {
 //            super.onBackPressed();
 //    }
 
+    private void openLogin() {
 
-//    private void openLogin() {
-//
-//        startActivity(new Intent(this, LoginActivity.class));
-//        finish();
-//
-//
-
-
+        startActivity(new Intent(this, LoginActivity.class));
+        finish();
+    }
 }
