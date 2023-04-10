@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.fragment.DialogFragmentNavigatorDestinationBuilder;
 
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -81,6 +82,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         verify_otp_btn.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SuspiciousIndentation")
             @Override
             public void onClick(View v) {
                 String otp=user_otp.getText().toString();

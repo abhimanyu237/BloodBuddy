@@ -1,8 +1,4 @@
 package com.example.bloodbuddy.authentication;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +13,9 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.bloodbuddy.MainActivity;
 import com.example.bloodbuddy.R;
@@ -193,7 +192,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     private void openMainActivity() {
 
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(RegisterActivity.this, MainActivity.class));
         finish();
     }
 
