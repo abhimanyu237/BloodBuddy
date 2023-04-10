@@ -135,5 +135,6 @@
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-installations-interop:17.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-measurement-connector:19.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-measurement-sdk:21.2.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.airbnb.android:lottie:6.0.0@aar" level="project" />
   </component>
 </module>

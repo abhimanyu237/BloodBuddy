@@ -3,20 +3,42 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/app_color"
     android:layout_height="match_parent"
+    android:background="@color/app_color"
     tools:context=".SplashScreenActivity"
 
     >
 
 
-<!--    <ImageView-->
-<!--        android:id="@+id/imageView"-->
-<!--        android:layout_width="238dp"-->
-<!--        android:layout_height="231dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:srcCompat="@drawable/splash_screen_image" />-->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="300dp"
+
+        android:layout_height="300dp"
+        android:layout_marginTop="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/blooddonation" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Buddy"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:fontFamily="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView"
+        app:layout_constraintVertical_bias="0.431" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

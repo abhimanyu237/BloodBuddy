@@ -41,7 +41,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 checkUser();
 
             }
-        }, 2000);
+        }, 5000);
 
 
 
