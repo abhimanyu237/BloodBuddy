@@ -35,7 +35,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run() {
-//                startActivity(new Intent(SplashScreenActivity.this, LoginActivity.class));
+     //           startActivity(new Intent(SplashScreenActivity.this, LoginActivity.class));
                 checkUser();
 
             }
@@ -75,4 +75,5 @@ public class SplashScreenActivity extends AppCompatActivity {
             finish();
         }
     }
+
 }
