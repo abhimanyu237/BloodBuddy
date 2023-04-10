@@ -31,6 +31,8 @@ public class SplashScreenActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_splash_screen);
 
+        // to remove
+//        startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
 
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
