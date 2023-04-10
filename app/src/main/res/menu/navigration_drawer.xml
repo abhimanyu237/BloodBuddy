@@ -40,6 +40,11 @@
         android:icon="@drawable/help"
         android:onClick="onNavigationItemSelected"
         />
+    <item android:id="@+id/navigation_logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_logout"
+        android:onClick="OnclickLogout"
+        />
 
 </menu>
 <!--    android:icon="@drawable/ic_name1"-->

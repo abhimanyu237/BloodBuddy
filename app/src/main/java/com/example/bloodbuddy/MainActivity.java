@@ -2,6 +2,7 @@ package com.example.bloodbuddy;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -9,6 +10,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -19,6 +21,7 @@ import android.widget.Toast;
 import com.example.bloodbuddy.authentication.LoginActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.Objects;
 
@@ -27,11 +30,10 @@ public class MainActivity extends AppCompatActivity {
     private NavController navController;
 
 
-
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle toggle;
     private NavigationView navigationView;
-//    private FirebaseAuth auth;
+    private FirebaseAuth auth;
 //
 //    private FirebaseDatabase db;
 //    private DatabaseReference ref;
@@ -120,6 +122,25 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+    public void OnclickLogout(MenuItem item){
+       // Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show();
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+        builder.setMessage("Do you want to Logout");
+        builder.setTitle("Bloodbuddy");
+        builder.setCancelable(false);
+
+        builder.setPositiveButton("Yes", (DialogInterface.OnClickListener) (dialog, which) -> {
+            finish();
+            startActivity(new Intent(MainActivity.this,LoginActivity.class));
+        });
+        builder.setNegativeButton("No", (DialogInterface.OnClickListener) (dialog, which) -> {
+            dialog.cancel();
+        });
+
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+    }
+
 //
 //
 //        return true;
@@ -142,6 +163,6 @@ public class MainActivity extends AppCompatActivity {
 //        finish();
 //
 //
-//    }
+
 
 }
