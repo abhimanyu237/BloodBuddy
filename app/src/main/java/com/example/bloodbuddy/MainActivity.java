@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle toggle;
     private NavigationView navigationView;
-    private FirebaseAuth auth;
+    private FirebaseAuth auth=FirebaseAuth.getInstance();
 //
 //    private FirebaseDatabase db;
 //    private DatabaseReference ref;
@@ -130,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
         builder.setCancelable(false);
 
         builder.setPositiveButton("Yes", (DialogInterface.OnClickListener) (dialog, which) -> {
+            auth.signOut();
             finish();
             startActivity(new Intent(MainActivity.this,LoginActivity.class));
         });
