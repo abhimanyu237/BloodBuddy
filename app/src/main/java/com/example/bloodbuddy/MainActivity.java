@@ -28,8 +28,6 @@ import java.util.Objects;
 public class MainActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;
     private NavController navController;
-
-
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle toggle;
     private NavigationView navigationView;
@@ -48,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
 //        ref=db.getReference();
 //
 //
-//        bottomNavigationView = findViewById(R.id.bottomNavigationView);
-//        navController = Navigation.findNavController(this, R.id.fragment_layout);
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        navController = Navigation.findNavController(this, R.id.fragment_layout);
 
 
 //        auth=FirebaseAuth.getInstance();
@@ -66,9 +64,7 @@ public class MainActivity extends AppCompatActivity {
 ////
 //        navigationView.setNavigationItemSelectedListener(this);
 ////
-//        NavigationUI.setupWithNavController(bottomNavigationView, navController);
-
-
+        NavigationUI.setupWithNavController(bottomNavigationView, navController);
     }
 
     @Override
