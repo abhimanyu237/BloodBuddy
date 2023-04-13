@@ -71,7 +71,7 @@ public class LoginActivity extends AppCompatActivity {
              String number=user_number.getText().toString();
 
                 if(number==null)
-                    Toast.makeText(LoginActivity.this, "Please enter your number", Toast.LENGTH_SHORT).show();
+                    user_number.setError("Please enter your number");
                 else
                 {
                      sendOtp(number);
@@ -145,15 +145,15 @@ public class LoginActivity extends AppCompatActivity {
                 // now need to ask the user to enter the code and then construct a credential
                 // by combining the code with a verification ID.
 
-                dialog.Dismiss();
 
                 // Save verification ID and resending token so we can use them later
+                 VerificationId = verificationId;
 
-
-                VerificationId = verificationId;
+                dialog.Dismiss();
 
                 numberLayout.setVisibility(View.GONE);
                 otpLayout.setVisibility(View.VISIBLE);
+
             }
         };
 
@@ -202,30 +202,44 @@ public class LoginActivity extends AppCompatActivity {
 
 
             // User is already authenticated, check if user data is saved in the database
-            DatabaseReference userRef = FirebaseDatabase.getInstance().getReference().child("users").child(number);
-            userRef.addListenerForSingleValueEvent(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+         FirebaseDatabase ref= FirebaseDatabase.getInstance();
 
-                    dialog2.Dismiss();
+         ref.getReference("users").child(FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber()).addValueEventListener(new ValueEventListener() {
+             @Override
+             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
-                    if (dataSnapshot.exists()) {
-                        // User data is saved in the database, navigate to main activity
-                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
-                    } else {
-                        // User data is not saved in the database, navigate to register activity
-                        startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
-                    }
-                    finish();
-                }
+                 dialog2.Dismiss();
 
-                @Override
-                public void onCancelled(@NonNull DatabaseError databaseError) {
-                    // Handle database error if needed
-                    dialog2.Dismiss();
-                    Toast.makeText(LoginActivity.this, databaseError.getMessage(), Toast.LENGTH_SHORT).show();
-                }
-            });
+                 if (snapshot.exists()) {
+                     // User data is saved in the database, navigate to main activity
+                     startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                 } else {
+                     // User data is not saved in the database, navigate to register activity
+                     startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+                 }
+                 finish();
+             }
+
+             @Override
+             public void onCancelled(@NonNull DatabaseError error) {
+
+                 // Handle database error if needed
+                 dialog2.Dismiss();
+                 Toast.makeText(LoginActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+             }
+         });
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
 }

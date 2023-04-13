@@ -1,8 +1,4 @@
 package com.example.bloodbuddy.authentication;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +13,9 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.bloodbuddy.MainActivity;
 import com.example.bloodbuddy.R;
@@ -193,7 +192,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     private void openMainActivity() {
 
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(RegisterActivity.this, MainActivity.class));
         finish();
     }
 
@@ -207,16 +206,25 @@ public class RegisterActivity extends AppCompatActivity {
         int month = calendar.get(Calendar.MONTH);
         int day = calendar.get(Calendar.DAY_OF_MONTH);
 
-        // Create a DatePickerDialog with the current date as the initial selected date
+        // Calculate the maximum date allowed (18 years ago from the current date)
+        Calendar maxDate = Calendar.getInstance();
+        maxDate.add(Calendar.YEAR, -18);
+
+        // Create a DatePickerDialog with the current date as the initial selected date,
+        // and set the max date as 18 years ago from the current date
         DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
                 // Update the selected date in the TextView or EditText
-
                 String selectedDate = String.format(Locale.getDefault(), "%02d/%02d/%04d", day, month + 1, year);
                 user_dob.setText(selectedDate);
             }
         }, year, month, day);
+        datePickerDialog.getDatePicker().setMaxDate(maxDate.getTimeInMillis()); // Set max date
+
+        // Enable year picker
+        datePickerDialog.getDatePicker().setCalendarViewShown(false);
+        datePickerDialog.getDatePicker().setSpinnersShown(true);
 
         // Show the DatePickerDialog
         datePickerDialog.show();

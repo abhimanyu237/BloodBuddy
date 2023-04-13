@@ -141,20 +141,17 @@ public class MainActivity extends AppCompatActivity {
         alertDialog.show();
     }
 
-//
-//
-//        return true;
-//    }
 
-//    @Override
-//    public void onBackPressed() {
-//        if(drawerLayout.isDrawerOpen(GravityCompat.START))
-//        {
-//            drawerLayout.closeDrawer(GravityCompat.START);
-//        }
-//        else
-//            super.onBackPressed();
-//    }
+
+    @Override
+    public void onBackPressed() {
+        if(drawerLayout.isDrawerOpen(GravityCompat.START))
+        {
+            drawerLayout.closeDrawer(GravityCompat.START);
+        }
+        else
+            super.onBackPressed();
+    }
 
     private void openLogin() {
 
