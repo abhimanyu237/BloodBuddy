@@ -5,4 +5,31 @@
     <string name="nav_close">Close</string>
     <string name="title_request">Request Blood</string>
     <string name="title_donate">Receivers List</string>
+    <string name="request_advice">(Kindly fill the details correctly to help you better)</string>
+    <string name="select_blood_type">Select Blood Type</string>
+    <string name="select_blood_type_blood">Blood</string>
+    <string name="select_blood_type_platelets">Platelets</string>
+    <string name="patient_first_name">Patient First name</string>
+    <string name="patient_last_name">Patient Last name</string>
+    <string name="attendee_first_name">Attendee First name</string>
+    <string name="attendee_last_name">Attendee Last name</string>
+    <string name="attendee_mobile_number">Attendee Mobile Number</string>
+    <string name="select_blood_group">Select Blood Group</string>
+    <string name="required_date">Required Date</string>
+    <string name="patient_age">Patient Age (DOB)</string>
+    <string name="units">Units</string>
+    <string name="select_location">Please Select Location</string>
+    <string name="send_request">Send Request</string>
+
+    <string-array name="blood_group_array">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>Don\'t Know</item>
+    </string-array>
 </resources>
