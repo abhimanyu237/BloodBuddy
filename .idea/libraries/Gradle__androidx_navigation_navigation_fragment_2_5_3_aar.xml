@@ -1,13 +1,22 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.navigation:navigation-fragment:2.5.3@aar">
     <CLASSES>
+<<<<<<< HEAD
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/776d9462c2b9bbd56485b630244a4671/transformed/navigation-fragment-2.5.3/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/776d9462c2b9bbd56485b630244a4671/transformed/navigation-fragment-2.5.3/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/776d9462c2b9bbd56485b630244a4671/transformed/navigation-fragment-2.5.3/AndroidManifest.xml" />
+=======
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ca638d52cd734b74b3c5902693aa4e7e/transformed/navigation-fragment-2.5.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ca638d52cd734b74b3c5902693aa4e7e/transformed/navigation-fragment-2.5.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ca638d52cd734b74b3c5902693aa4e7e/transformed/navigation-fragment-2.5.3/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/7ddb1d710e2b2d2e3f3b72c2870a9f6b/transformed/navigation-fragment-2.5.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/7ddb1d710e2b2d2e3f3b72c2870a9f6b/transformed/navigation-fragment-2.5.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/7ddb1d710e2b2d2e3f3b72c2870a9f6b/transformed/navigation-fragment-2.5.3/res" />
+>>>>>>> refs/remotes/origin/main
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.navigation/navigation-fragment/2.5.3/aff438b3d0ec7efdf206c285af9f291231e877a9/navigation-fragment-2.5.3-sources.jar!/" />
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/modules-2/files-2.1/androidx.navigation/navigation-fragment/2.5.3/aff438b3d0ec7efdf206c285af9f291231e877a9/navigation-fragment-2.5.3-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
