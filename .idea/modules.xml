@@ -7,6 +7,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BloodBuddy.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BloodBuddy.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BloodBuddy.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BloodBuddy.app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BloodBuddy.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BloodBuddy.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Desktop.BloodBuddy.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Desktop.BloodBuddy.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Desktop.BloodBuddy.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Desktop.BloodBuddy.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Desktop.BloodBuddy.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Desktop.BloodBuddy.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Desktop.BloodBuddy.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Desktop.BloodBuddy.app.unitTest.iml" />
     </modules>
   </component>
 </project>

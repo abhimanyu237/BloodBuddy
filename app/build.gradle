@@ -48,6 +48,11 @@ dependencies {
 
     // lottie animation
     implementation 'com.airbnb.android:lottie:6.0.0'
+    task wrapper(type: Wrapper){
+        gradleVersion = '7.2'
+    }
+    task prepareKotlinBuildScriptModel {
 
+    }
 
 }
