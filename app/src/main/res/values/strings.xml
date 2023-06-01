@@ -20,6 +20,8 @@
     <string name="units">Units</string>
     <string name="select_location">Please Select Location</string>
     <string name="send_request">Send Request</string>
+    <string name="userid">UserID</string>
+    <string name="userid_53421">UserID 53421</string>
 
     <string-array name="blood_group_array">
         <item>A+</item>

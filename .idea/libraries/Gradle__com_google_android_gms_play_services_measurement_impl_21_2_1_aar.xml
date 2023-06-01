@@ -1,20 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-measurement-impl:21.2.1@aar">
     <CLASSES>
-<<<<<<< HEAD
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/17d0a586683a8a40eee2fbc6e8c96d3d/transformed/play-services-measurement-impl-21.2.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/17d0a586683a8a40eee2fbc6e8c96d3d/transformed/play-services-measurement-impl-21.2.1/AndroidManifest.xml" />
-=======
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/946cd810dacc5fd1866a18c99ece151f/transformed/play-services-measurement-impl-21.2.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/946cd810dacc5fd1866a18c99ece151f/transformed/play-services-measurement-impl-21.2.1/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/81d6f6f8f0732f8ebb14eb836d19f002/transformed/play-services-measurement-impl-21.2.1/res" />
-      <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/81d6f6f8f0732f8ebb14eb836d19f002/transformed/play-services-measurement-impl-21.2.1/res" />
-      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/81d6f6f8f0732f8ebb14eb836d19f002/transformed/play-services-measurement-impl-21.2.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/81d6f6f8f0732f8ebb14eb836d19f002/transformed/play-services-measurement-impl-21.2.1/AndroidManifest.xml" />
->>>>>>> refs/remotes/origin/main
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement-impl/21.2.1/c21bb818e75b710fbc2fae6b133cd1c32d137cf8/play-services-measurement-impl-21.2.1-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement-impl/21.2.1/c21bb818e75b710fbc2fae6b133cd1c32d137cf8/play-services-measurement-impl-21.2.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />
   </library>

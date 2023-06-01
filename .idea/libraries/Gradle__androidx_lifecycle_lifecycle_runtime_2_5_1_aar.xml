@@ -1,22 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.lifecycle:lifecycle-runtime:2.5.1@aar">
     <CLASSES>
-<<<<<<< HEAD
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7c64d2850486e0b19cf723be75f3ec1f/transformed/lifecycle-runtime-2.5.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7c64d2850486e0b19cf723be75f3ec1f/transformed/lifecycle-runtime-2.5.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7c64d2850486e0b19cf723be75f3ec1f/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml" />
-=======
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/20c1ea1f646bec4ba9d31160fd5ab286/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/20c1ea1f646bec4ba9d31160fd5ab286/transformed/lifecycle-runtime-2.5.1/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/20c1ea1f646bec4ba9d31160fd5ab286/transformed/lifecycle-runtime-2.5.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/bb02bcfba3cbbca509d6c41f06068172/transformed/lifecycle-runtime-2.5.1/res" />
-      <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/bb02bcfba3cbbca509d6c41f06068172/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/bb02bcfba3cbbca509d6c41f06068172/transformed/lifecycle-runtime-2.5.1/jars/classes.jar!/" />
->>>>>>> refs/remotes/origin/main
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-runtime/2.5.1/d255b447102736e536a28b97671c6a736c801b7/lifecycle-runtime-2.5.1-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-runtime/2.5.1/d255b447102736e536a28b97671c6a736c801b7/lifecycle-runtime-2.5.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

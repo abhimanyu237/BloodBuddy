@@ -1,29 +1,16 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.activity:activity:1.6.0@aar">
     <ANNOTATIONS>
-<<<<<<< HEAD
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/4a1200b74ec5664f01a3bd0edec7fbd1/transformed/activity-1.6.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/4a1200b74ec5664f01a3bd0edec7fbd1/transformed/activity-1.6.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4a1200b74ec5664f01a3bd0edec7fbd1/transformed/activity-1.6.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4a1200b74ec5664f01a3bd0edec7fbd1/transformed/activity-1.6.0/AndroidManifest.xml" />
-=======
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/af4ae6c8784e47135f1639e569aae322/transformed/activity-1.6.0/annotations.zip!/" />
-      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/788495a5590876b9fdb55c03362eb2d3/transformed/activity-1.6.0/annotations.zip!/" />
-    </ANNOTATIONS>
-    <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/af4ae6c8784e47135f1639e569aae322/transformed/activity-1.6.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/af4ae6c8784e47135f1639e569aae322/transformed/activity-1.6.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/af4ae6c8784e47135f1639e569aae322/transformed/activity-1.6.0/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/788495a5590876b9fdb55c03362eb2d3/transformed/activity-1.6.0/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/788495a5590876b9fdb55c03362eb2d3/transformed/activity-1.6.0/res" />
-      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/788495a5590876b9fdb55c03362eb2d3/transformed/activity-1.6.0/jars/classes.jar!/" />
->>>>>>> refs/remotes/origin/main
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/modules-2/files-2.1/androidx.activity/activity/1.6.0/8af90d35b111258f964b0f3743a695a8deb574a0/activity-1.6.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.activity/activity/1.6.0/8af90d35b111258f964b0f3743a695a8deb574a0/activity-1.6.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
