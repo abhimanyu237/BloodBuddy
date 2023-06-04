@@ -76,6 +76,7 @@ public class RegisterActivity extends AppCompatActivity {
       ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.drop_down_item,item);
       user_blood_grp.setAdapter(adapter);
 
+
         reg_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
