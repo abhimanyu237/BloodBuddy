@@ -38,7 +38,9 @@ public class RegisterActivity extends AppCompatActivity {
     private  String email=null;
     private  String dob=null;
     private  String blood_grp=null;
-    private  String address = null;
+   // private  String address = null;
+    private String state=null;
+    private String city=null;
 
 
 
@@ -47,7 +49,7 @@ public class RegisterActivity extends AppCompatActivity {
     private DatabaseReference reference;
     private FirebaseDatabase db;
     private Button reg_btn;
-    private EditText user_name,user_email,user_dob,user_address;
+    private EditText user_name,user_email,user_dob,user_state,user_city;
     private AutoCompleteTextView user_blood_grp;
 
     @Override
@@ -65,7 +67,8 @@ public class RegisterActivity extends AppCompatActivity {
 
         reg_btn=findViewById(R.id.reg_btn);
         user_name=findViewById(R.id.user_name);
-        user_address=findViewById(R.id.user_address);
+        user_state=findViewById(R.id.user_state);
+        user_city=findViewById(R.id.user_city);
         user_email=findViewById(R.id.user_email);
         user_dob=findViewById(R.id.user_dob);
         user_blood_grp=findViewById(R.id.user_blood_grp);
@@ -75,6 +78,7 @@ public class RegisterActivity extends AppCompatActivity {
 
       ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.drop_down_item,item);
       user_blood_grp.setAdapter(adapter);
+
 
         reg_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -123,7 +127,8 @@ public class RegisterActivity extends AppCompatActivity {
          email=user_email.getText().toString();
          dob=user_dob.getText().toString();
          blood_grp=user_blood_grp.getText().toString();
-        address = user_address.getText().toString();
+        state = user_state.getText().toString();
+        city = user_city.getText().toString();
 
 
         if(name.isEmpty()){
@@ -141,10 +146,16 @@ public class RegisterActivity extends AppCompatActivity {
 
             Toast.makeText(this, "Select Blood group", Toast.LENGTH_SHORT).show();
 
-        }else if(address.isEmpty()){
+        }else if(state.isEmpty()){
 
-            user_address.setError("Required");
-            user_address.requestFocus();
+            user_state.setError("Required");
+            user_state.requestFocus();
+
+        }
+        else if(city.isEmpty()){
+
+            user_city.setError("Required");
+            user_city.requestFocus();
 
         }
         else{
@@ -160,7 +171,7 @@ public class RegisterActivity extends AppCompatActivity {
 
 
 //String phone_number, String name, String email, String dob, String blood_grp, String address
-        UserData data = new UserData(phone_number,name,email,dob,blood_grp,address);
+        UserData data = new UserData(phone_number,name,email,dob,blood_grp,state,city);
 
         reference.child("users").child(phone_number).setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override

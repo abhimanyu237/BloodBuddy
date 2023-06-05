@@ -7,18 +7,21 @@ public class UserData {
     private  String email=null;
     private  String dob=null;
     private  String blood_grp=null;
-    private  String address = null;
+//    private  String address = null;
+    private String state=null;
+    private String city=null;
 
     public UserData() {
     }
 
-    public UserData(String phone_number, String name, String email, String dob, String blood_grp, String address) {
+    public UserData(String phone_number, String name, String email, String dob, String blood_grp, String state,String city) {
         this.phone_number = phone_number;
         this.name = name;
         this.email = email;
         this.dob = dob;
         this.blood_grp = blood_grp;
-        this.address = address;
+        this.state = state;
+        this.city=city;
     }
 
     public String getPhone_number() {
@@ -27,6 +30,22 @@ public class UserData {
 
     public void setPhone_number(String phone_number) {
         this.phone_number = phone_number;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public String getName() {
@@ -61,11 +80,4 @@ public class UserData {
         this.blood_grp = blood_grp;
     }
 
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
 }

@@ -20,6 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class SplashScreenActivity extends AppCompatActivity {
+       private int result=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,15 +31,27 @@ public class SplashScreenActivity extends AppCompatActivity {
         }
 
         setContentView(R.layout.activity_splash_screen);
-
-        // to remove
-        startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
+        checkUser();
 
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run() {
-     //           startActivity(new Intent(SplashScreenActivity.this, LoginActivity.class));
-                checkUser();
+
+                if (result == 1) {
+                    // User data is saved in the database, navigate to main activity
+                    startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
+                    finish();
+                }
+                else if(result==2){
+                    // User data is not saved in the database, navigate to register activity
+                    startActivity(new Intent(SplashScreenActivity.this, RegisterActivity.class));
+                    finish();
+                }
+                else if(result==3){
+                    // User is not authenticated, navigate to login activity
+                    startActivity(new Intent(SplashScreenActivity.this, LoginActivity.class));
+                    finish();
+                }
 
             }
         }, 5000);
@@ -58,12 +71,14 @@ public class SplashScreenActivity extends AppCompatActivity {
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     if (dataSnapshot.exists()) {
                         // User data is saved in the database, navigate to main activity
-                        startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
+//                        startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
+                        result=1;
                     } else {
                         // User data is not saved in the database, navigate to register activity
-                        startActivity(new Intent(SplashScreenActivity.this, RegisterActivity.class));
+//                        startActivity(new Intent(SplashScreenActivity.this, RegisterActivity.class));
+                        result=2;
                     }
-                    finish();
+
                 }
 
                 @Override
@@ -73,8 +88,9 @@ public class SplashScreenActivity extends AppCompatActivity {
             });
         } else {
             // User is not authenticated, navigate to login activity
-            startActivity(new Intent(SplashScreenActivity.this, LoginActivity.class));
-            finish();
+            result=3;
+//            startActivity(new Intent(SplashScreenActivity.this, LoginActivity.class));
+
         }
     }
 
