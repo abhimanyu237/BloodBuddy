@@ -3,13 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F826E9"
+    android:background="#Ffffff"
     tools:context=".ui.donate.OtherBloodGroupFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
+
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_height="match_parent"
-        android:text="Other Blood Group" />
+        android:layout_width="match_parent"
+        android:id="@+id/recyclerView"
+        >
+
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
 
 </FrameLayout>

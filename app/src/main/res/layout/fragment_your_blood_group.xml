@@ -2,14 +2,27 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#F5C637"
+    android:background="#Ffffff"
     android:layout_height="match_parent"
     tools:context=".ui.donate.YourBloodGroupFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Your Blood Group" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/recyclerView"
+            >
+
+
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
 
 </FrameLayout>
