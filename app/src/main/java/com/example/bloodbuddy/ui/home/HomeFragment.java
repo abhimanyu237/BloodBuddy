@@ -82,16 +82,18 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         ArrayList<SlideModel> imageList = new ArrayList<>(); // Create image list
+        imageList.add(new SlideModel("https://eaglestaleonline.com/wp-content/uploads/2020/10/News-Vein-Drain-Infographic-2.png","Motivation",ScaleTypes.CENTER_CROP));
+        imageList.add(new SlideModel("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoRTL57Z-ux_hpkpGfaMlJPj4iwvOEDqQ-dA&usqp=CAU", "Blood Donor Motivation",ScaleTypes.CENTER_CROP));
+        imageList.add(new SlideModel("https://i.ytimg.com/vi/87aP7m9NcyM/maxresdefault.jpg", "“HIGHEST BLOOD DONOR\" is achieved by Hony Capt Dr. Suresh Kumar Saini from Karnal (Haryana) India on 22nd October 2020. He donated blood 131 times. He also donated platelets for 94 times.",ScaleTypes.CENTER_CROP));
 
-        imageList.add(new SlideModel("https://bit.ly/2YoJ77H", "The animal population decreased by 58 percent in 42 years.", ScaleTypes.CENTER_CROP));
-        imageList.add(new SlideModel("https://bit.ly/2BteuF2", "Elephants and tigers may become extinct.",ScaleTypes.CENTER_CROP));
-        imageList.add(new SlideModel("https://bit.ly/3fLJf72", "And people do that.",ScaleTypes.CENTER_CROP));
-        imageList.add(new SlideModel("https://c8.alamy.com/comp/2M4KYNM/blood-donationorgan-transplantation-laboratory-mobile-app-page-onboard-screenvolunteer-character-healthcarecharity-world-donor-day-concept-for-we-2M4KYNM.jpg", "Fee Structure Of MNNIT Allahabad", ScaleTypes.CENTER_CROP));
-        imageList.add(new SlideModel("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt6qVMVE-6gnf_TofUC1R_xUuqSlDw7kJUmCwdNVN-DuJ6K7B7aumtYZVrWIvjd5JpQls&usqp=CAU", "Elephants and tigers may become extinct.",ScaleTypes.CENTER_CROP));
-        imageList.add(new SlideModel("https://bit.ly/3fLJf72", "And people do that.",ScaleTypes.CENTER_CROP));
         ImageSlider imageSlider = view.findViewById(R.id.image_slider);
         imageSlider.setImageList(imageList);
+        ArrayList<SlideModel> imageList1 = new ArrayList<>(); // Create image list
+
+        imageList1.add(new SlideModel("https://c8.alamy.com/comp/2M4KYNM/blood-donationorgan-transplantation-laboratory-mobile-app-page-onboard-screenvolunteer-character-healthcarecharity-world-donor-day-concept-for-we-2M4KYNM.jpg", "blood Buddy", ScaleTypes.CENTER_CROP));
+        imageList1.add(new SlideModel("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt6qVMVE-6gnf_TofUC1R_xUuqSlDw7kJUmCwdNVN-DuJ6K7B7aumtYZVrWIvjd5JpQls&usqp=CAU", "Blood Groups",ScaleTypes.CENTER_CROP));
+        imageList1.add(new SlideModel("https://bit.ly/3fLJf72", "And people do that.",ScaleTypes.CENTER_CROP));
         ImageSlider imageSlider1=view.findViewById(R.id.image_slider1);
-        imageSlider1.setImageList(imageList);
+        imageSlider1.setImageList(imageList1);
     }
 }
