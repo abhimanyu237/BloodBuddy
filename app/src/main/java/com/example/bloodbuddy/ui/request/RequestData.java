@@ -4,14 +4,37 @@ public class RequestData {
 
 
     private String patient_first_name,patient_last_name, attendee_first_name,attendee_last_name, state,city,local_address,
-            attendee_mobile_number, patient_age,  units,select_blood_grp;
+            attendee_mobile_number, patient_age,  units,select_blood_grp,donate_date,gender,whatsapp;
+
 
     public RequestData() {
     }
 
-    public RequestData(String patient_first_name, String patient_last_name, String attendee_first_name, String attendee_last_name,
-                       String state, String city, String local_address, String attendee_mobile_number, String patient_age,
-                       String units, String select_blood_grp) {
+    public String getDonate_date() {
+        return donate_date;
+    }
+
+    public void setDonate_date(String donate_date) {
+        this.donate_date = donate_date;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getWhatsapp() {
+        return whatsapp;
+    }
+
+    public void setWhatsapp(String whatsapp) {
+        this.whatsapp = whatsapp;
+    }
+
+    public RequestData(String patient_first_name, String patient_last_name, String attendee_first_name, String attendee_last_name, String state, String city, String local_address, String attendee_mobile_number, String patient_age, String units, String select_blood_grp, String donate_date, String gender, String whatsapp) {
         this.patient_first_name = patient_first_name;
         this.patient_last_name = patient_last_name;
         this.attendee_first_name = attendee_first_name;
@@ -23,9 +46,10 @@ public class RequestData {
         this.patient_age = patient_age;
         this.units = units;
         this.select_blood_grp = select_blood_grp;
+        this.donate_date = donate_date;
+        this.gender = gender;
+        this.whatsapp = whatsapp;
     }
-
-
 
     public String getPatient_first_name() {
         return patient_first_name;

@@ -182,6 +182,28 @@
             </com.google.android.material.textfield.TextInputLayout>
 
 
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="   Patient Gender"
+                >
+
+
+                <AutoCompleteTextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/patient_gender"
+                    android:inputType="none"
+                    />
+
+
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
 
 
 
@@ -199,7 +221,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:hint="Select Blood Group"
+                android:hint="   Patient Blood Group"
                 >
 
 
@@ -214,6 +236,58 @@
 
 
 
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="   Date For Blood Requirement"
+
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/blood_donate_date"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+
+
+                    android:inputType="date"
+                    android:padding="12dp"
+
+                    />
+
+
+
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+
+                >
+
+               <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Whatsapp Number"
+                android:inputType="number"
+                android:id="@+id/contact_whatsapp"
+
+                android:padding="12dp"
+
+                />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -242,74 +316,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!--                   <LinearLayout-->
-            <!--                       android:layout_width="match_parent"-->
-            <!--                       android:layout_height="wrap_content"-->
-            <!--                       android:orientation="horizontal"-->
-
-
-            <!--                       >-->
-
-            <!--                       <com.google.android.material.textfield.TextInputLayout-->
-            <!--                           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
-            <!--                           android:layout_width="wrap_content"-->
-            <!--                           android:layout_height="wrap_content"-->
-            <!--                           android:layout_marginTop="8dp"-->
-
-
-            <!--                           >-->
-
-            <!--                           <com.google.android.material.textfield.TextInputEditText-->
-            <!--                               android:id="@+id/user_adds"-->
-            <!--                               android:layout_width="match_parent"-->
-            <!--                               android:layout_height="wrap_content"-->
-            <!--                               android:hint="   Address"-->
-            <!--                               android:inputType="text"-->
-            <!--                               android:padding="12dp"-->
-
-            <!--                               />-->
-
-            <!--                       </com.google.android.material.textfield.TextInputLayout>-->
-
-
-
-            <!--                       <com.google.android.material.textfield.TextInputLayout-->
-            <!--                           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
-            <!--                           android:layout_width="wrap_content"-->
-            <!--                           android:layout_height="wrap_content"-->
-            <!--                           android:layout_marginTop="8dp"-->
-
-
-            <!--                           >-->
-
-            <!--                           <com.google.android.material.textfield.TextInputEditText-->
-            <!--                               android:layout_width="match_parent"-->
-            <!--                               android:layout_height="wrap_content"-->
-            <!--                               android:hint="   Address"-->
-            <!--                               android:id="@+id/user_addre"-->
-            <!--                               android:inputType="text"-->
-            <!--                               android:padding="12dp"-->
-
-            <!--                               />-->
-
-            <!--                       </com.google.android.material.textfield.TextInputLayout>-->
-
-
-            <!--                   </LinearLayout>-->
 
 
 

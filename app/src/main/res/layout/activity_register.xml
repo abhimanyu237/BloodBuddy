@@ -21,14 +21,20 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginHorizontal="25dp"
+        >
+
+
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:id="@+id/numberLayout"
             app:cardBackgroundColor="@color/white"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="36dp"
-            android:layout_marginTop="-230dp"
             app:cardCornerRadius="12dp"
             app:cardElevation="7dp"
             app:layout_constraintTop_toBottomOf="@+id/imageView3">
@@ -87,7 +93,6 @@
                         android:padding="12dp"
 
                         />
-                    <!--                  android:inputType="emailAddress"-->
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -129,6 +134,29 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="Gender"
+                    >
+
+
+                    <AutoCompleteTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/user_gender"
+                        android:inputType="none"
+                        />
+
+
+
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
 
 
 
@@ -153,6 +181,27 @@
 
 
 
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+
+                    >
+
+S                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" Whatsapp Number"
+                    android:inputType="number"
+                        android:id="@+id/user_whatsapp"
+
+                        android:padding="12dp"
+
+                        />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -220,7 +269,7 @@
 
         </com.google.android.material.card.MaterialCardView>
 
-
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

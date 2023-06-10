@@ -10,11 +10,29 @@ public class UserData {
 //    private  String address = null;
     private String state=null;
     private String city=null;
+    private String whatsapp=null;
+    private String gender=null;
 
     public UserData() {
     }
 
-    public UserData(String phone_number, String name, String email, String dob, String blood_grp, String state,String city) {
+    public String getWhatsapp() {
+        return whatsapp;
+    }
+
+    public void setWhatsapp(String whatsapp) {
+        this.whatsapp = whatsapp;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public UserData(String phone_number, String name, String email, String dob, String blood_grp, String state, String city, String whatsapp, String gender) {
         this.phone_number = phone_number;
         this.name = name;
         this.email = email;
@@ -22,6 +40,8 @@ public class UserData {
         this.blood_grp = blood_grp;
         this.state = state;
         this.city=city;
+        this.whatsapp=whatsapp;
+        this.gender=gender;
     }
 
     public String getPhone_number() {

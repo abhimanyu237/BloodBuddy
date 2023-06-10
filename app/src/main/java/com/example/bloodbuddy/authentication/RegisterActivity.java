@@ -41,7 +41,8 @@ public class RegisterActivity extends AppCompatActivity {
    // private  String address = null;
     private String state=null;
     private String city=null;
-
+    private String whatsapp=null;
+    private String gender=null;
 
 
 
@@ -49,8 +50,8 @@ public class RegisterActivity extends AppCompatActivity {
     private DatabaseReference reference;
     private FirebaseDatabase db;
     private Button reg_btn;
-    private EditText user_name,user_email,user_dob,user_state,user_city;
-    private AutoCompleteTextView user_blood_grp;
+    private EditText user_name,user_email,user_dob,user_state,user_city,user_whatsapp;
+    private AutoCompleteTextView user_blood_grp,user_gender;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,12 +73,17 @@ public class RegisterActivity extends AppCompatActivity {
         user_email=findViewById(R.id.user_email);
         user_dob=findViewById(R.id.user_dob);
         user_blood_grp=findViewById(R.id.user_blood_grp);
+        user_gender=findViewById(R.id.user_gender);
+        user_whatsapp=findViewById(R.id.user_whatsapp);
 
+      String item1[]={" A+ "," A- "," B+ "," B- "," O+ "," O- "," AB+ "," AB- "};
+        String item2[]={" Male "," Female "," Other "};
 
-      String item[]={" A+ "," A- "," B+ "," B- "," O+ "," O- "," AB+ "," AB- "};
-
-      ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.drop_down_item,item);
+      ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.drop_down_item,item1);
       user_blood_grp.setAdapter(adapter);
+
+        ArrayAdapter<String> ad = new ArrayAdapter<>(this, R.layout.drop_down_item,item2);
+        user_gender.setAdapter(ad);
 
 
         reg_btn.setOnClickListener(new View.OnClickListener() {
@@ -129,7 +135,8 @@ public class RegisterActivity extends AppCompatActivity {
          blood_grp=user_blood_grp.getText().toString();
         state = user_state.getText().toString();
         city = user_city.getText().toString();
-
+         whatsapp=user_whatsapp.getText().toString();
+         gender=user_gender.getText().toString();
 
         if(name.isEmpty()){
             user_name.setError("Required");
@@ -142,9 +149,18 @@ public class RegisterActivity extends AppCompatActivity {
 
             Toast.makeText(this, "Select DOB", Toast.LENGTH_SHORT).show();
 
+        }else if(gender.isEmpty()){
+
+            Toast.makeText(this, "Select Gender", Toast.LENGTH_SHORT).show();
+
         }else if(blood_grp.isEmpty()){
 
             Toast.makeText(this, "Select Blood group", Toast.LENGTH_SHORT).show();
+
+        }else if(whatsapp.isEmpty()){
+
+            user_whatsapp.setError("Required");
+            user_whatsapp.requestFocus();
 
         }else if(state.isEmpty()){
 
@@ -171,7 +187,7 @@ public class RegisterActivity extends AppCompatActivity {
 
 
 //String phone_number, String name, String email, String dob, String blood_grp, String address
-        UserData data = new UserData(phone_number,name,email,dob,blood_grp,state,city);
+        UserData data = new UserData(phone_number,name,email,dob,blood_grp,state,city,whatsapp,gender);
 
         reference.child("users").child(phone_number).setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
