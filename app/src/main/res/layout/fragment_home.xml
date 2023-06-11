@@ -15,9 +15,11 @@
         android:orientation="vertical"
         android:id="@+id/linearLayout">
         <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/userId"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="userid 53921"
+            android:text="USER ID : 53921  "
             android:gravity="center"
             android:textStyle="bold"
             android:textSize="20sp"
