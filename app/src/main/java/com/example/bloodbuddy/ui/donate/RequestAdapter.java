@@ -45,7 +45,7 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.ViewHold
         String a=item.getPatient_first_name()+" "+item.getPatient_last_name();
         holder.name.setText(a);
         holder.units.setText(item.getUnits());
-        String b=item.getState()+" , "+item.getCity()+" , "+item.getLocal_address();
+        String b=item.getState()+" , "+item.getDistrict()+" , "+item.getLocal_address();
         holder.address.setText(b);
         holder.date.setText(item.getDonate_date());
 

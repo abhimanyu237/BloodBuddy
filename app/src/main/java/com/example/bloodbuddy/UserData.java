@@ -9,7 +9,7 @@ public class UserData {
     private  String blood_grp=null;
 
     private String state=null;
-    private String city=null;
+    private String district=null;
     private String whatsapp=null;
     private String gender=null;
     private  String userId = null;
@@ -18,14 +18,14 @@ public class UserData {
     }
 
 
-    public UserData(String phone_number, String name, String email, String dob, String blood_grp, String state, String city, String whatsapp, String gender, String userId) {
+    public UserData(String phone_number, String name, String email, String dob, String blood_grp, String state, String district, String whatsapp, String gender, String userId) {
         this.phone_number = phone_number;
         this.name = name;
         this.email = email;
         this.dob = dob;
         this.blood_grp = blood_grp;
         this.state = state;
-        this.city = city;
+        this.district = district;
         this.whatsapp = whatsapp;
         this.gender = gender;
         this.userId = userId;
@@ -72,12 +72,12 @@ public class UserData {
         this.state = state;
     }
 
-    public String getCity() {
-        return city;
+    public String getDistrict() {
+        return district;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public void setDistrict(String district) {
+        this.district = district;
     }
 
     public String getName() {

@@ -351,8 +351,8 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="   City"
-                    android:id="@+id/city"
+                    android:hint="   District"
+                    android:id="@+id/district"
                     android:inputType="text"
                     android:padding="12dp"
 

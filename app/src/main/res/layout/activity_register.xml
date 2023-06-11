@@ -239,8 +239,8 @@ S                    <com.google.android.material.textfield.TextInputEditText
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="   City"
-                        android:id="@+id/user_city"
+                        android:hint="   District"
+                        android:id="@+id/user_district"
                         android:inputType="text"
                         android:padding="12dp"
 

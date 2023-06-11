@@ -3,7 +3,7 @@ package com.example.bloodbuddy.ui.request;
 public class RequestData {
 
 
-    private String patient_first_name,patient_last_name, attendee_first_name,attendee_last_name, state,city,local_address,
+    private String patient_first_name,patient_last_name, attendee_first_name,attendee_last_name, state,district,local_address,
             attendee_mobile_number, patient_age,  units,select_blood_grp,donate_date,gender,whatsapp;
 
 
@@ -12,13 +12,13 @@ public class RequestData {
 
 
 
-    public RequestData(String patient_first_name, String patient_last_name, String attendee_first_name, String attendee_last_name, String state, String city, String local_address, String attendee_mobile_number, String patient_age, String units, String select_blood_grp, String donate_date, String gender, String whatsapp) {
+    public RequestData(String patient_first_name, String patient_last_name, String attendee_first_name, String attendee_last_name, String state, String district, String local_address, String attendee_mobile_number, String patient_age, String units, String select_blood_grp, String donate_date, String gender, String whatsapp) {
         this.patient_first_name = patient_first_name;
         this.patient_last_name = patient_last_name;
         this.attendee_first_name = attendee_first_name;
         this.attendee_last_name = attendee_last_name;
         this.state = state;
-        this.city = city;
+        this.district = district;
         this.local_address = local_address;
         this.attendee_mobile_number = attendee_mobile_number;
         this.patient_age = patient_age;
@@ -91,12 +91,12 @@ public class RequestData {
         this.state = state;
     }
 
-    public String getCity() {
-        return city;
+    public String getDistrict() {
+        return district;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public void setDistrict(String district) {
+        this.district = district;
     }
 
     public String getLocal_address() {

@@ -37,7 +37,7 @@ public class YourBloodGroupFragment extends Fragment {
      private LinearLayout linear_layout;
      private String phone=null;
      private String state=null;
-     private String city=null;
+     private String district=null;
      private String bg=null;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -80,11 +80,11 @@ public class YourBloodGroupFragment extends Fragment {
                             UserData userData=dataSnapshot.getValue(UserData.class);
 
                     state=userData.getState();
-                    city=userData.getCity();
+                    district=userData.getDistrict();
                     bg=userData.getBlood_grp();
 
 
-                            Toast.makeText(getContext(), phone+" "+state+" "+city+" "+bg, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getContext(), phone+" "+state+" "+district+" "+bg, Toast.LENGTH_SHORT).show();
                             loadRequest();
                         }
                         else
@@ -99,7 +99,7 @@ public class YourBloodGroupFragment extends Fragment {
     }
 
     void loadRequest(){
-        DatabaseReference myRef= databaseRef.child("requests").child(state).child(city);
+        DatabaseReference myRef= databaseRef.child("requests").child(state).child(district);
   //      Toast.makeText(getContext(), state, Toast.LENGTH_SHORT).show();
         //
 

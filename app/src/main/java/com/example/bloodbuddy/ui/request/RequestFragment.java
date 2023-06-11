@@ -39,7 +39,7 @@ public class RequestFragment extends Fragment {
     private String a_first_name=null;
     private String  a_last_name=null;
     private String State=null;
-    private String City=null;
+    private String District=null;
     private String l_address=null;
     private String a_mobile_number=null;
     private String p_age=null;
@@ -55,7 +55,7 @@ public class RequestFragment extends Fragment {
 
 
 
-    private EditText patient_first_name,patient_last_name,attendee_first_name,attendee_last_name,state,city,local_address,
+    private EditText patient_first_name,patient_last_name,attendee_first_name,attendee_last_name,state,district,local_address,
             attendee_mobile_number,patient_age,units,blood_donate_date,contact_whatsapp;
     private AutoCompleteTextView select_blood_grp,patient_gender;
     private Button send_request;
@@ -70,7 +70,7 @@ public class RequestFragment extends Fragment {
       attendee_first_name=view.findViewById(R.id.attendee_first_name);
       attendee_last_name=view.findViewById(R.id.attendee_last_name);
       state=view.findViewById(R.id.state);
-      city=view.findViewById(R.id.city);
+      district=view.findViewById(R.id.district);
       local_address=view.findViewById(R.id.local_address);
       attendee_mobile_number=view.findViewById(R.id.attendee_mobile_number);
       patient_age=view.findViewById(R.id.patient_age);
@@ -136,7 +136,7 @@ public class RequestFragment extends Fragment {
         a_first_name= attendee_first_name.getText().toString();
         a_last_name= attendee_last_name.getText().toString();
         State= state.getText().toString();
-        City=city.getText().toString();
+        District=district.getText().toString();
         l_address=local_address.getText().toString();
         a_mobile_number=  attendee_mobile_number.getText().toString();
         p_age=  patient_age.getText().toString();
@@ -194,9 +194,9 @@ public class RequestFragment extends Fragment {
             state.setError("Required");
             state.requestFocus();
         }
-        else  if(City.isEmpty()){
-            city.setError("Required");
-            city.requestFocus();
+        else  if(District.isEmpty()){
+            district.setError("Required");
+            district.requestFocus();
         }
         else  if( l_address.isEmpty()){
             local_address.setError("Required");
@@ -222,10 +222,10 @@ public class RequestFragment extends Fragment {
 
 
         RequestData data = new RequestData(p_first_name, p_last_name, a_first_name, a_last_name,
-                State, City, l_address, a_mobile_number, p_age,
+                State, District, l_address, a_mobile_number, p_age,
                 Units, blood_grp,donate_date,gender,whatsapp);
 
-        reference.child("requests").child(State).child(City).child(phone_number).setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
+        reference.child("requests").child(State).child(District).child(phone_number).setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
 

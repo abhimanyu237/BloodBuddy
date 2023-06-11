@@ -45,17 +45,16 @@ public class RegisterActivity extends AppCompatActivity {
     private  String blood_grp=null;
     private  String userId = null;
     private String state=null;
-    private String city=null;
+    private String district=null;
     private String whatsapp=null;
     private String gender=null;
     private int counterValue=0;
-
 
     private FirebaseAuth auth;
     private DatabaseReference reference;
     private FirebaseDatabase db;
     private Button reg_btn;
-    private EditText user_name,user_email,user_dob,user_state,user_city,user_whatsapp;
+    private EditText user_name,user_email,user_dob,user_state,user_district,user_whatsapp;
     private AutoCompleteTextView user_blood_grp,user_gender;
 
     @Override
@@ -74,7 +73,7 @@ public class RegisterActivity extends AppCompatActivity {
         reg_btn=findViewById(R.id.reg_btn);
         user_name=findViewById(R.id.user_name);
         user_state=findViewById(R.id.user_state);
-        user_city=findViewById(R.id.user_city);
+        user_district=findViewById(R.id.user_district);
         user_email=findViewById(R.id.user_email);
         user_dob=findViewById(R.id.user_dob);
         user_blood_grp=findViewById(R.id.user_blood_grp);
@@ -139,7 +138,7 @@ public class RegisterActivity extends AppCompatActivity {
          dob=user_dob.getText().toString();
          blood_grp=user_blood_grp.getText().toString();
         state = user_state.getText().toString();
-        city = user_city.getText().toString();
+        district = user_district.getText().toString();
          whatsapp=user_whatsapp.getText().toString();
          gender=user_gender.getText().toString();
 
@@ -173,10 +172,10 @@ public class RegisterActivity extends AppCompatActivity {
             user_state.requestFocus();
 
         }
-        else if(city.isEmpty()){
+        else if(district.isEmpty()){
 
-            user_city.setError("Required");
-            user_city.requestFocus();
+            user_district.setError("Required");
+            user_district.requestFocus();
 
         }
         else{
@@ -201,6 +200,7 @@ public class RegisterActivity extends AppCompatActivity {
                         if (dataSnapshot.exists()) {
                             counterValue = dataSnapshot.getValue(Integer.class);
                           //  Toast.makeText(RegisterActivity.this, "Counter VAlue::"+counterValue, Toast.LENGTH_SHORT).show();
+
                             counterValue++;
                             userId=String.format("%08d", counterValue);
 
@@ -225,7 +225,7 @@ public class RegisterActivity extends AppCompatActivity {
     private void fun(){
         Dialog dialog=new Dialog(RegisterActivity.this);
         whatsapp="+91"+whatsapp;
-        UserData data = new UserData(phone_number,name,email,dob,blood_grp,state,city,whatsapp,gender,userId);
+        UserData data = new UserData(phone_number,name,email,dob,blood_grp,state,district,whatsapp,gender,userId);
 
         reference.child("users").child(phone_number).setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
@@ -300,26 +300,6 @@ public class RegisterActivity extends AppCompatActivity {
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("globalCounter");
 
 // Increment the counter value by 1
-        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                if (dataSnapshot.exists()) {
-                    Integer counterValue = dataSnapshot.getValue(Integer.class);
-                    if (counterValue != null) {
-                        // Increment the counter value
-                        counterValue++;
-                        // Update the value in the database
-                        databaseReference.setValue(counterValue);
-                    }
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                Toast.makeText(RegisterActivity.this, databaseError.getMessage(), Toast.LENGTH_SHORT).show();
-            }
-        });
-
 
         databaseReference.setValue(counterValue).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
