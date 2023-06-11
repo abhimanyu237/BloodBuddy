@@ -7,7 +7,7 @@
     app:cardCornerRadius="12dp"
     app:cardElevation="7dp"
     app:cardBackgroundColor="@color/white"
-    android:layout_height="170dp">
+    android:layout_height="190dp">
 
 
 
@@ -40,6 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Name"
+                android:textStyle="bold"
 
                 />
 
@@ -50,6 +51,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Units"
+                android:textStyle="bold"
 
                 />
             <TextView
@@ -59,7 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Address"
-
+                android:textStyle="bold"
                 />
 
             <TextView
@@ -69,13 +71,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Date"
+                android:textStyle="bold"
 
                 />
 
             <Button
                 android:layout_gravity="center"
                 android:id="@+id/accept"
-                android:layout_marginTop="6dp"
+                android:layout_marginBottom="0dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Accept"

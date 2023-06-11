@@ -7,15 +7,37 @@ public class UserData {
     private  String email=null;
     private  String dob=null;
     private  String blood_grp=null;
-//    private  String address = null;
+
     private String state=null;
     private String city=null;
     private String whatsapp=null;
     private String gender=null;
+    private  String userId = null;
 
     public UserData() {
     }
 
+
+    public UserData(String phone_number, String name, String email, String dob, String blood_grp, String state, String city, String whatsapp, String gender, String userId) {
+        this.phone_number = phone_number;
+        this.name = name;
+        this.email = email;
+        this.dob = dob;
+        this.blood_grp = blood_grp;
+        this.state = state;
+        this.city = city;
+        this.whatsapp = whatsapp;
+        this.gender = gender;
+        this.userId = userId;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
     public String getWhatsapp() {
         return whatsapp;
     }
@@ -32,17 +54,7 @@ public class UserData {
         this.gender = gender;
     }
 
-    public UserData(String phone_number, String name, String email, String dob, String blood_grp, String state, String city, String whatsapp, String gender) {
-        this.phone_number = phone_number;
-        this.name = name;
-        this.email = email;
-        this.dob = dob;
-        this.blood_grp = blood_grp;
-        this.state = state;
-        this.city=city;
-        this.whatsapp=whatsapp;
-        this.gender=gender;
-    }
+
 
     public String getPhone_number() {
         return phone_number;

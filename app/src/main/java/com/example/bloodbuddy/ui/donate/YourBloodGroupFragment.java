@@ -134,7 +134,7 @@ public class YourBloodGroupFragment extends Fragment {
 //                    else  if(list.size()==3)
 //                        Toast.makeText(getContext(), "3", Toast.LENGTH_SHORT).show();
 
-                   recyclerView.setHasFixedSize(true);
+                    recyclerView.setHasFixedSize(true);
                     recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
 

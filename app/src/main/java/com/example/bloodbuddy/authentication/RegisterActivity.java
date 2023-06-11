@@ -22,11 +22,16 @@ import com.example.bloodbuddy.R;
 import com.example.bloodbuddy.UserData;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
+import java.security.PrivateKey;
 import java.util.Calendar;
 import java.util.Locale;
 
@@ -38,12 +43,12 @@ public class RegisterActivity extends AppCompatActivity {
     private  String email=null;
     private  String dob=null;
     private  String blood_grp=null;
-   // private  String address = null;
+    private  String userId = null;
     private String state=null;
     private String city=null;
     private String whatsapp=null;
     private String gender=null;
-
+    private int counterValue=0;
 
 
     private FirebaseAuth auth;
@@ -183,11 +188,44 @@ public class RegisterActivity extends AppCompatActivity {
 
     private void storeInDataBase() {
 
+
+
+      //  Toast.makeText(this,"userId::"+ userId, Toast.LENGTH_SHORT).show();
+
+        FirebaseDatabase.getInstance().getReference("globalCounter")
+                .get()
+                .addOnSuccessListener(new OnSuccessListener<DataSnapshot>() {
+                    @Override
+                    public void onSuccess(DataSnapshot dataSnapshot) {
+
+                        if (dataSnapshot.exists()) {
+                            counterValue = dataSnapshot.getValue(Integer.class);
+                          //  Toast.makeText(RegisterActivity.this, "Counter VAlue::"+counterValue, Toast.LENGTH_SHORT).show();
+                            counterValue++;
+                            userId=String.format("%08d", counterValue);
+
+                           fun();
+
+                        }
+                        else
+                        {
+                            Toast.makeText(RegisterActivity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
+                        }
+
+
+                    }
+                });
+
+
+
+       // Toast.makeText(RegisterActivity.this, "User ID Value 2::"+userId, Toast.LENGTH_SHORT).show();
+     
+    }
+
+    private void fun(){
         Dialog dialog=new Dialog(RegisterActivity.this);
-
-
-//String phone_number, String name, String email, String dob, String blood_grp, String address
-        UserData data = new UserData(phone_number,name,email,dob,blood_grp,state,city,whatsapp,gender);
+        whatsapp="+91"+whatsapp;
+        UserData data = new UserData(phone_number,name,email,dob,blood_grp,state,city,whatsapp,gender,userId);
 
         reference.child("users").child(phone_number).setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
@@ -198,7 +236,7 @@ public class RegisterActivity extends AppCompatActivity {
                 {
 
                     Toast.makeText(RegisterActivity.this, "Register successfully", Toast.LENGTH_SHORT).show();
-
+                    IncreaseGlobalCounter();
                     openMainActivity();
                 }else
                 {
@@ -256,5 +294,55 @@ public class RegisterActivity extends AppCompatActivity {
         // Show the DatePickerDialog
         datePickerDialog.show();
     }
+
+    void IncreaseGlobalCounter(){
+
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("globalCounter");
+
+// Increment the counter value by 1
+        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if (dataSnapshot.exists()) {
+                    Integer counterValue = dataSnapshot.getValue(Integer.class);
+                    if (counterValue != null) {
+                        // Increment the counter value
+                        counterValue++;
+                        // Update the value in the database
+                        databaseReference.setValue(counterValue);
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Toast.makeText(RegisterActivity.this, databaseError.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        databaseReference.setValue(counterValue).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+
+
+                if(task.isSuccessful())
+                {
+
+                }else
+                {
+                    Toast.makeText(RegisterActivity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
+                }
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+
+                Toast.makeText(RegisterActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+
+            }
+        });
+    }
+
 
 }

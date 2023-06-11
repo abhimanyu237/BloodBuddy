@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.bloodbuddy.R;
 import com.example.bloodbuddy.ui.request.RequestData;
 
@@ -40,13 +41,72 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-          RequestData item = list.get(position);
-        holder.name.setText(item.getPatient_first_name()+" "+item.getPatient_last_name());
+        RequestData item = list.get(position);
+        String a=item.getPatient_first_name()+" "+item.getPatient_last_name();
+        holder.name.setText(a);
         holder.units.setText(item.getUnits());
-        holder.address.setText(item.getLocal_address());
-//          holder.date.setText(item.getDate());// date wala box nhi banaya abhi//
-//
-          // image bad me banayenge//
+        String b=item.getState()+" , "+item.getCity()+" , "+item.getLocal_address();
+        holder.address.setText(b);
+        holder.date.setText(item.getDonate_date());
+
+        String bg=item.getSelect_blood_grp();
+
+        try{
+
+            if(bg.equals("O+")){
+                Glide.
+                        with(context)
+                        .load(R.drawable.bg_o_pos)
+                        .into(holder.bg_image);
+            }else  if(bg.equals("O-")){
+                Glide.
+                        with(context)
+                        .load(R.drawable.bg_o_neg)
+                        .into(holder.bg_image);
+            }else  if(bg.equals("A+")){
+                Glide.
+                        with(context)
+                        .load(R.drawable.bg_a_pos)
+                        .into(holder.bg_image);
+            }else  if(bg.equals("A-")){
+                Glide.
+                        with(context)
+                        .load(R.drawable.bg_a_neg)
+                        .into(holder.bg_image);
+            }else  if(bg.equals("B+")){
+                Glide.
+                        with(context)
+                        .load(R.drawable.bg_b_pos)
+                        .into(holder.bg_image);
+            }else  if(bg.equals("B-")){
+                Glide.
+                        with(context)
+                        .load(R.drawable.bg_b_neg)
+                        .into(holder.bg_image);
+            }else  if(bg.equals("AB+")){
+                Glide.
+                        with(context)
+                        .load(R.drawable.bg_ab_pos)
+                        .into(holder.bg_image);
+            }else  if(bg.equals("AB-")){
+                Glide.
+                        with(context)
+                        .load(R.drawable.bg_ab_neg)
+                        .into(holder.bg_image);
+            }
+            else{
+                Glide.
+                        with(context)
+                        .load(R.drawable.bg_img)
+                        .into(holder.bg_image);
+
+            }
+
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
     }
 
     @Override
@@ -72,4 +132,6 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.ViewHold
 
         }
     }
+
+
 }
