@@ -208,42 +208,46 @@ S                    <com.google.android.material.textfield.TextInputEditText
 
 
 
+
                 <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-
+                    android:id="@+id/user_state_layout"
+                    android:hint="   State"
                     >
 
-                    <com.google.android.material.textfield.TextInputEditText
+
+                    <AutoCompleteTextView
+
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="   State"
                         android:id="@+id/user_state"
-                        android:inputType="text"
-                        android:padding="12dp"
-
+                        android:inputType="none"
                         />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
+
+
+
+
                 <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-
+                    android:hint="   District"
                     >
 
-                    <com.google.android.material.textfield.TextInputEditText
+
+                    <AutoCompleteTextView
+
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="   District"
                         android:id="@+id/user_district"
-                        android:inputType="text"
-                        android:padding="12dp"
-
+                        android:inputType="none"
                         />
 
                 </com.google.android.material.textfield.TextInputLayout>
