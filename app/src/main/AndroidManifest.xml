@@ -13,6 +13,9 @@
         android:theme="@style/Theme.BloodBuddy"
         tools:targetApi="31">
         <activity
+            android:name="com.example.bloodbuddy.ui.donate.AcceptActivity"
+            android:exported="false" />
+        <activity
             android:name=".Navigation_Help"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
@@ -42,19 +45,12 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SplashScreenActivity"
-
-
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
-
-
-
         </activity>
         <activity
             android:name=".authentication.ForgetPasswordActivity"
@@ -64,17 +60,10 @@
             android:exported="false" />
         <activity
             android:name=".authentication.RegisterActivity"
-
-            android:exported="false" >
-
-
-
-
-        </activity>
-
+            android:exported="false"></activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>

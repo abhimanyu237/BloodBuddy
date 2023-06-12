@@ -1,6 +1,8 @@
 package com.example.bloodbuddy.ui.request;
 
-public class RequestData {
+import java.io.Serializable;
+
+public class RequestData implements Serializable {
 
 
     private String patient_first_name,patient_last_name, attendee_first_name,attendee_last_name, state,district,local_address,

@@ -7,7 +7,7 @@
     app:cardCornerRadius="12dp"
     app:cardElevation="7dp"
     app:cardBackgroundColor="@color/white"
-    android:layout_height="190dp">
+    android:layout_height="200dp">
 
 
 
@@ -20,15 +20,17 @@
 
         <ImageView
          android:layout_width="80dp"
-         android:layout_height="80dp"
+         android:layout_height="130dp"
+
             android:id="@+id/bg_image"
-         android:src="@drawable/bg_o_neg"
+         android:src="@drawable/bg_img"
             />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
+            android:layout_margin="10dp"
             >
 
 
@@ -36,7 +38,7 @@
                 android:layout_marginTop="5dp"
                 android:id="@+id/name"
                 android:layout_marginBottom="3dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginHorizontal="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Name"
@@ -78,9 +80,8 @@
             <Button
                 android:layout_gravity="center"
                 android:id="@+id/accept"
-                android:layout_marginBottom="0dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:text="Accept"
 
                 />

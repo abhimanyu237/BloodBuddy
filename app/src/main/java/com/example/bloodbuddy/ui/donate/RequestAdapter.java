@@ -1,11 +1,14 @@
 package com.example.bloodbuddy.ui.donate;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -18,7 +21,7 @@ import java.util.List;
 
 public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.ViewHolder>{
 
-
+    private RequestData requestData;
     //1 data
     private List<RequestData> list;
     private Context context;
@@ -41,54 +44,75 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        RequestData item = list.get(position);
-        String a=item.getPatient_first_name()+" "+item.getPatient_last_name();
-        holder.name.setText(a);
-        holder.units.setText(item.getUnits());
-        String b=item.getState()+" , "+item.getDistrict()+" , "+item.getLocal_address();
-        holder.address.setText(b);
-        holder.date.setText(item.getDonate_date());
+        requestData = list.get(holder.getAdapterPosition());
+        String name="Name : "+requestData.getPatient_first_name()+" "+requestData.getPatient_last_name();
+        String unit="Unit : "+requestData.getUnits();
+     String address="Address : "+requestData.getState()+" , "+requestData.getDistrict()+" , "+requestData.getLocal_address();
+        String date="Date : "+requestData.getDonate_date();
+        holder.name.setText(name);
+        holder.units.setText(unit);
+        holder.address.setText(address);
+        holder.date.setText(date);
 
-        String bg=item.getSelect_blood_grp();
+        holder.accept.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Toast.makeText(context, "helshbcsb", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(context, AcceptActivity.class);
+                intent.putExtra("requestData",list.get(holder.getAdapterPosition()));
+                context.startActivity(intent);
+            }
+        });
+
+        String bg=requestData.getSelect_blood_grp();
 
         try{
-
-            if(bg.equals("O+")){
+            String a_pos = "A+";
+            String a_neg = "A-";
+            String b_pos = "B+";
+            String b_neg = "B-";
+            String ab_pos = "AB+";
+            String ab_neg = "AB-";
+            String o_pos = "O+";
+            String o_neg = "O-";
+            if(bg.trim().equals(o_pos)){
                 Glide.
                         with(context)
                         .load(R.drawable.bg_o_pos)
                         .into(holder.bg_image);
-            }else  if(bg.equals("O-")){
+            }else  if(bg.trim().equals(o_neg)){
                 Glide.
                         with(context)
                         .load(R.drawable.bg_o_neg)
                         .into(holder.bg_image);
-            }else  if(bg.equals("A+")){
+            }else  if(bg.trim().equals(a_pos)){
                 Glide.
                         with(context)
                         .load(R.drawable.bg_a_pos)
                         .into(holder.bg_image);
-            }else  if(bg.equals("A-")){
+            }else  if(bg.trim().equals(a_neg)){
                 Glide.
                         with(context)
                         .load(R.drawable.bg_a_neg)
                         .into(holder.bg_image);
-            }else  if(bg.equals("B+")){
+            }else  if(bg.trim().equals(b_pos)){
                 Glide.
                         with(context)
                         .load(R.drawable.bg_b_pos)
                         .into(holder.bg_image);
-            }else  if(bg.equals("B-")){
+            }else  if(bg.trim().equals(b_neg)){
                 Glide.
                         with(context)
                         .load(R.drawable.bg_b_neg)
                         .into(holder.bg_image);
-            }else  if(bg.equals("AB+")){
+            }else  if(bg.trim().equals(ab_pos)){
+
                 Glide.
                         with(context)
                         .load(R.drawable.bg_ab_pos)
                         .into(holder.bg_image);
-            }else  if(bg.equals("AB-")){
+            }else  if(bg.trim().equals(ab_neg)){
                 Glide.
                         with(context)
                         .load(R.drawable.bg_ab_neg)
@@ -117,7 +141,7 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.ViewHold
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         private TextView name, units, address,date;
-
+        private Button accept;
         private ImageView bg_image;
 
 
@@ -129,9 +153,10 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.ViewHold
             address = itemView.findViewById(R.id.address);
             date = itemView.findViewById(R.id.date);
             bg_image=itemView.findViewById(R.id.bg_image);
-
+              accept=itemView.findViewById(R.id.accept);
         }
     }
+
 
 
 }
