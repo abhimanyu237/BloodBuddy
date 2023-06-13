@@ -32,7 +32,7 @@
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".Navigation_Request"
+            android:name=".Navigation_Request_History"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity

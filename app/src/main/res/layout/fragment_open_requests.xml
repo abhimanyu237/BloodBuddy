@@ -2,14 +2,27 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#Ffffff"
     android:layout_height="match_parent"
-    android:background="#F8C6E7"
     tools:context=".OpenRequestsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_width="match_parent"
+        android:id="@+id/recyclerView"
+        >
+
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
 
 </FrameLayout>

@@ -1,6 +1,7 @@
 package com.example.bloodbuddy.ui.request;
 
 import android.app.DatePickerDialog;
+import java.util.UUID;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -27,6 +28,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Calendar;
 import java.util.Locale;
+import java.util.UUID;
 
 
 public class RequestFragment extends Fragment {
@@ -79,6 +81,9 @@ public class RequestFragment extends Fragment {
         blood_donate_date=view.findViewById(R.id.blood_donate_date);
         contact_whatsapp=view.findViewById(R.id.contact_whatsapp);
 
+
+        attendee_mobile_number.setText(FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber().toString());
+        attendee_mobile_number.setEnabled(false);
 
         select_blood_grp=view.findViewById(R.id.select_blood_grp);
         send_request=view.findViewById(R.id.send_request);
@@ -518,14 +523,17 @@ public class RequestFragment extends Fragment {
     private void storeInDataBase() {
 
 
-
+        String uniqueID = UUID.randomUUID().toString();
+        String code=phone_number+uniqueID;
 
 
         RequestData data = new RequestData(p_first_name, p_last_name, a_first_name, a_last_name,
                 State, District, l_address, a_mobile_number, p_age,
-                Units, blood_grp,donate_date,gender,whatsapp);
+                Units, blood_grp,donate_date,gender,whatsapp,code);
 
-        reference.child("requests").child(State).child(District).child(phone_number).setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
+
+
+        reference.child("requests").child(State).child(District).child(code).setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
 
@@ -534,7 +542,7 @@ public class RequestFragment extends Fragment {
                 {
 
                     Toast.makeText(getContext(), "Request Send Successfully", Toast.LENGTH_SHORT).show();
-
+                    StoreDataForUserRequest(code ,data);
 
                 }else
                 {
@@ -550,6 +558,12 @@ public class RequestFragment extends Fragment {
 
             }
         });
+
+
+
+
+
+
 
     }
 
@@ -582,7 +596,34 @@ public class RequestFragment extends Fragment {
     }
 
 
+private void StoreDataForUserRequest(String code,RequestData data){
 
+     FirebaseDatabase.getInstance().getReference().child("userRequests").child(phone_number).child("openRequests").child(code).setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
+         @Override
+         public void onComplete(@NonNull Task<Void> task) {
+
+
+             if(!task.isSuccessful())
+             {
+                 Toast.makeText(getContext(), "Something went wrong", Toast.LENGTH_SHORT).show();
+             }
+         }
+     }).addOnFailureListener(new OnFailureListener() {
+         @Override
+         public void onFailure(@NonNull Exception e) {
+
+
+             Toast.makeText(getContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
+
+         }
+     });
+
+
+
+
+
+
+}
 
 }
 

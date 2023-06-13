@@ -15,8 +15,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Toast;
 
 import com.example.bloodbuddy.authentication.LoginActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -96,11 +94,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.navigation_profile:
                 startActivity(new Intent(MainActivity.this, Navigation_Profile.class));
                 break;
-            case R.id.navigation_history:
-                startActivity(new Intent(MainActivity.this, Navigation_History.class));
-                break;
             case R.id.navigation_request:
-                startActivity(new Intent(MainActivity.this, Navigation_Request.class));
+                startActivity(new Intent(MainActivity.this, Navigation_Request_History.class));
                 break;
             case R.id.navigation_rate_us:
                 startActivity(new Intent(MainActivity.this, Navigation_RateUs.class));

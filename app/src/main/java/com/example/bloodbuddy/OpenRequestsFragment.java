@@ -2,63 +2,114 @@ package com.example.bloodbuddy;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link OpenRequestsFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import com.example.bloodbuddy.ui.donate.RequestAdapter;
+import com.example.bloodbuddy.ui.request.RequestData;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class OpenRequestsFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    private DatabaseReference databaseRef;
+    private FirebaseDatabase db;
+    private FirebaseAuth auth;
+    private RecyclerView recyclerView;
+    private LinearLayout linear_layout;
+    private String phone=null;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public OpenRequestsFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment OpenRequestsFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static OpenRequestsFragment newInstance(String param1, String param2) {
-        OpenRequestsFragment fragment = new OpenRequestsFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_open_requests, container, false);
+      View view= inflater.inflate(R.layout.fragment_open_requests, container, false);
+
+
+        recyclerView=view.findViewById(R.id.recyclerView);
+
+
+        db=FirebaseDatabase.getInstance();
+        databaseRef = db.getReference();
+        auth=FirebaseAuth.getInstance();
+
+        phone=auth.getCurrentUser().getPhoneNumber();
+
+
+        loadRequest();
+        return view;
+    }
+
+    void loadRequest(){
+        DatabaseReference myRef= databaseRef.child("userRequests").child(phone).child("openRequests");
+        //      Toast.makeText(getContext(), state, Toast.LENGTH_SHORT).show();
+        //
+
+        myRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                if(!snapshot.exists())
+                {
+                    Toast.makeText(getContext(), "No Request Available", Toast.LENGTH_SHORT).show();
+                }
+                else
+                {
+
+
+
+                    List<RequestData> list=new ArrayList();
+
+                    for(DataSnapshot snaps: snapshot.getChildren())
+                    {
+                        RequestData data=snaps.getValue(RequestData.class);
+                         list.add(data);
+                    }
+//                    if(list.size()==0)
+//                        Toast.makeText(getContext(), "0", Toast.LENGTH_SHORT).show();
+//                    else  if(list.size()==1)
+//                        Toast.makeText(getContext(), "1", Toast.LENGTH_SHORT).show();
+//                    else  if(list.size()==2)
+//                        Toast.makeText(getContext(), "2", Toast.LENGTH_SHORT).show();
+//                    else  if(list.size()==3)
+//                        Toast.makeText(getContext(), "3", Toast.LENGTH_SHORT).show();
+
+                    recyclerView.setHasFixedSize(true);
+                    recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
+
+
+                    OpenCloseRequestAdapter ad=new OpenCloseRequestAdapter(list, getContext(),1);
+
+                    recyclerView.setAdapter(ad);
+
+
+                }
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Toast.makeText(getContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
     }
 }

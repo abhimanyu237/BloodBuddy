@@ -6,15 +6,22 @@ public class RequestData implements Serializable {
 
 
     private String patient_first_name,patient_last_name, attendee_first_name,attendee_last_name, state,district,local_address,
-            attendee_mobile_number, patient_age,  units,select_blood_grp,donate_date,gender,whatsapp;
+            attendee_mobile_number, patient_age,  units,select_blood_grp,donate_date,gender,whatsapp,requestId;
 
 
     public RequestData() {
     }
 
 
+    public String getRequestId() {
+        return requestId;
+    }
 
-    public RequestData(String patient_first_name, String patient_last_name, String attendee_first_name, String attendee_last_name, String state, String district, String local_address, String attendee_mobile_number, String patient_age, String units, String select_blood_grp, String donate_date, String gender, String whatsapp) {
+    public void setRequestId(String requestId) {
+        this.requestId = requestId;
+    }
+
+    public RequestData(String patient_first_name, String patient_last_name, String attendee_first_name, String attendee_last_name, String state, String district, String local_address, String attendee_mobile_number, String patient_age, String units, String select_blood_grp, String donate_date, String gender, String whatsapp, String requestId) {
         this.patient_first_name = patient_first_name;
         this.patient_last_name = patient_last_name;
         this.attendee_first_name = attendee_first_name;
@@ -29,6 +36,7 @@ public class RequestData implements Serializable {
         this.donate_date = donate_date;
         this.gender = gender;
         this.whatsapp = whatsapp;
+        this.requestId=requestId;
     }
     public String getDonate_date() {
         return donate_date;

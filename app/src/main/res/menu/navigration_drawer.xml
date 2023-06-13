@@ -6,14 +6,8 @@
         android:icon="@drawable/ic_faculty"
         android:onClick="onNavigationItemSelected"
         />
-    <item android:id="@+id/navigation_history"
-        android:title="History"
-        android:icon="@drawable/history"
-        android:onClick="onNavigationItemSelected"
-
-        />
     <item android:id="@+id/navigation_request"
-        android:title="Request"
+        android:title="Request History"
         android:icon="@drawable/request"
         android:onClick="onNavigationItemSelected"
 
