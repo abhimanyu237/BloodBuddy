@@ -64,6 +64,11 @@ public class MainActivity extends AppCompatActivity {
 ////
         NavigationUI.setupWithNavController(bottomNavigationView, navController);
     }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        closeDrawer();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -148,5 +153,11 @@ public class MainActivity extends AppCompatActivity {
 
         startActivity(new Intent(this, LoginActivity.class));
         finish();
+    }
+
+    private void closeDrawer() {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            drawerLayout.closeDrawer(GravityCompat.START);
+        }
     }
 }

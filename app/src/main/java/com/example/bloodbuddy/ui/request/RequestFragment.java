@@ -2,6 +2,8 @@ package com.example.bloodbuddy.ui.request;
 
 import android.app.DatePickerDialog;
 import java.util.UUID;
+
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -17,8 +19,10 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.bloodbuddy.MainActivity;
 import com.example.bloodbuddy.R;
 import com.example.bloodbuddy.authentication.RegisterActivity;
+import com.example.bloodbuddy.ui.home.HomeFragment;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
@@ -94,6 +98,7 @@ public class RequestFragment extends Fragment {
 
         String item1[]={" A+ "," A- "," B+ "," B- "," O+ "," O- "," AB+ "," AB- "};
         String item2[]={" Male "," Female "," Other "};
+
         ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(), R.layout.drop_down_item,item1);
         select_blood_grp.setAdapter(adapter);
 
@@ -241,7 +246,6 @@ public class RequestFragment extends Fragment {
         state.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
 
                 state.setAdapter(stateAdapter);
                 district.setText("");
@@ -543,6 +547,9 @@ public class RequestFragment extends Fragment {
 
                     Toast.makeText(getContext(), "Request Send Successfully", Toast.LENGTH_SHORT).show();
                     StoreDataForUserRequest(code ,data);
+
+                    startActivity(new Intent(getActivity(), MainActivity.class));
+                    requireActivity().finish();
 
                 }else
                 {

@@ -18,6 +18,7 @@ import com.bumptech.glide.Glide;
 import com.example.bloodbuddy.ui.donate.AcceptActivity;
 import com.example.bloodbuddy.ui.donate.RequestAdapter;
 import com.example.bloodbuddy.ui.request.RequestData;
+import com.example.bloodbuddy.ui.request.RequestFragment;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
@@ -93,16 +94,18 @@ public class OpenCloseRequestAdapter extends RecyclerView.Adapter<OpenCloseReque
 
                                 if(task.isSuccessful())
                                 {
+
                                     storeForCloseRequests(phone,code);
                                     deleteFromRequestsTable(requestData.getState(),requestData.getDistrict(),code);
-
-
+//                                    notifyDataSetChanged();
+//                              context.startActivity(new Intent(context,Navigation_Request_History.class));
+//
                                 }
                                 else
                                     Toast.makeText(context, "Error", Toast.LENGTH_SHORT).show();
                             }
                         });
-                        notifyItemRemoved(holder.getAdapterPosition());
+
 
 
                     }
@@ -221,8 +224,6 @@ public class OpenCloseRequestAdapter extends RecyclerView.Adapter<OpenCloseReque
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-
-
                 Toast.makeText(context, e.getMessage(), Toast.LENGTH_SHORT).show();
 
             }
@@ -234,7 +235,7 @@ public class OpenCloseRequestAdapter extends RecyclerView.Adapter<OpenCloseReque
 
         DatabaseReference DRef = FirebaseDatabase.getInstance().getReference();
         DatabaseReference ref = DRef.child("requests").child(state).child(district);
-      //  Toast.makeText(context, "", Toast.LENGTH_SHORT).show();
+
         ref.child(code).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
