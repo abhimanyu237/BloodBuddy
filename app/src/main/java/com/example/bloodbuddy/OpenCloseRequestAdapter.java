@@ -1,5 +1,6 @@
 package com.example.bloodbuddy;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
@@ -89,6 +90,7 @@ public class OpenCloseRequestAdapter extends RecyclerView.Adapter<OpenCloseReque
                         DatabaseReference openRequestRef = databaseRef.child("userRequests").child(phone).child("openRequests");
                         Toast.makeText(context, "", Toast.LENGTH_SHORT).show();
                         openRequestRef.child(code).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                           // @SuppressLint("NotifyDataSetChanged")
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
 
@@ -97,8 +99,14 @@ public class OpenCloseRequestAdapter extends RecyclerView.Adapter<OpenCloseReque
 
                                     storeForCloseRequests(phone,code);
                                     deleteFromRequestsTable(requestData.getState(),requestData.getDistrict(),code);
-//                                    notifyDataSetChanged();
-//                              context.startActivity(new Intent(context,Navigation_Request_History.class));
+                                    notifyDataSetChanged();
+                                    try {
+                                        Thread.sleep(100);
+                                    } catch (InterruptedException e) {
+                                        Thread.currentThread().interrupt();
+                                    }
+
+                                     context.startActivity(new Intent(context,Navigation_Request_History.class));
 //
                                 }
                                 else

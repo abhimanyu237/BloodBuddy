@@ -36,10 +36,6 @@
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".Navigation_History"
-            android:exported="false"
-            android:parentActivityName=".MainActivity" />
-        <activity
             android:name=".Navigation_Profile"
             android:exported="false"
             android:parentActivityName=".MainActivity" />

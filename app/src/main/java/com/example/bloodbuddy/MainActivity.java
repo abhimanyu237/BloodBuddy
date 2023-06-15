@@ -84,8 +84,8 @@ public class MainActivity extends AppCompatActivity {
             return true;
 
         if(item.getItemId()==R.id.logout) {
-            auth.signOut();
-            openLogin();
+            OnclickLogout(item);
+            //openLogin();
 
         }
 

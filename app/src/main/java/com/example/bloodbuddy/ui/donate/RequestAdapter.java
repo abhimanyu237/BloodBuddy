@@ -57,8 +57,6 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.ViewHold
         holder.accept.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Toast.makeText(context, "helshbcsb", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(context, AcceptActivity.class);
                 intent.putExtra("requestData",list.get(holder.getAdapterPosition()));
                 context.startActivity(intent);

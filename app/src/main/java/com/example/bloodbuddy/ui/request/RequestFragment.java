@@ -126,6 +126,8 @@ public class RequestFragment extends Fragment {
 
         String[] indianStates = getResources().getStringArray(R.array.array_indian_states);
         ArrayAdapter<String> stateAdapter = new ArrayAdapter<>(getContext(), R.layout.drop_down_item,indianStates);
+        state.setAdapter(stateAdapter);
+
 
 
 
@@ -246,8 +248,6 @@ public class RequestFragment extends Fragment {
         state.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                state.setAdapter(stateAdapter);
                 district.setText("");
 
             }
