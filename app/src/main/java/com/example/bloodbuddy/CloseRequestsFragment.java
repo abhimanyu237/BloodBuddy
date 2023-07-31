@@ -26,7 +26,7 @@ import java.util.List;
 
 public class CloseRequestsFragment extends Fragment {
 
-
+   //change
     private DatabaseReference databaseRef;
     private FirebaseDatabase db;
     private FirebaseAuth auth;
