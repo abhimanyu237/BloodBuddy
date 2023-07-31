@@ -4,6 +4,8 @@
       <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/8e120710d24e82eb07068291ffc742ca/transformed/integrity-1.0.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/8e120710d24e82eb07068291ffc742ca/transformed/integrity-1.0.1/res" />
       <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/8e120710d24e82eb07068291ffc742ca/transformed/integrity-1.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8e120710d24e82eb07068291ffc742ca/transformed/integrity-1.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8e120710d24e82eb07068291ffc742ca/transformed/integrity-1.0.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
