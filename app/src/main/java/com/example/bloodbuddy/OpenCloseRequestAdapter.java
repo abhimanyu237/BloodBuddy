@@ -88,7 +88,6 @@ public class OpenCloseRequestAdapter extends RecyclerView.Adapter<OpenCloseReque
 
                         DatabaseReference databaseRef = FirebaseDatabase.getInstance().getReference();
                         DatabaseReference openRequestRef = databaseRef.child("userRequests").child(phone).child("openRequests");
-                        Toast.makeText(context, "", Toast.LENGTH_SHORT).show();
                         openRequestRef.child(code).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
                            // @SuppressLint("NotifyDataSetChanged")
                             @Override
@@ -100,13 +99,8 @@ public class OpenCloseRequestAdapter extends RecyclerView.Adapter<OpenCloseReque
                                     storeForCloseRequests(phone,code);
                                     deleteFromRequestsTable(requestData.getState(),requestData.getDistrict(),code);
                                     notifyDataSetChanged();
-                                    try {
-                                        Thread.sleep(100);
-                                    } catch (InterruptedException e) {
-                                        Thread.currentThread().interrupt();
-                                    }
-
                                      context.startActivity(new Intent(context,Navigation_Request_History.class));
+                                     notifyDataSetChanged();
 //
                                 }
                                 else

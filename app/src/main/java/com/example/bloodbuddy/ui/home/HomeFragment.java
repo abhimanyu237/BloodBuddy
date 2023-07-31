@@ -37,6 +37,7 @@ public class HomeFragment extends Fragment {
     private TextView userId,bloodGrp;
     private String uid=null,bg=null;
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
