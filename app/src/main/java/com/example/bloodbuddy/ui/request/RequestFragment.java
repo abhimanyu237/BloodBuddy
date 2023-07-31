@@ -624,13 +624,12 @@ public class RequestFragment extends Fragment {
 
                             String[] Attendee_name=userData.getName().toString().split("\\s+");
                             attendee_first_name.setText(Attendee_name[0]);
-                            attendee_first_name.setEnabled(false);
+                            //attendee_first_name.setEnabled(false);
                             if(Attendee_name.length>1) {
                                 attendee_last_name.setText(Attendee_name[1]);
-                                attendee_last_name.setEnabled(false);
+                                //attendee_last_name.setEnabled(false);
                             }else{
                                 attendee_last_name.setText("NA");
-                                attendee_last_name.setEnabled(false);
                             }
 
 //                                attendee_mobile_number.setText(userData.getPhoneNumber().toString());
