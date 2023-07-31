@@ -64,7 +64,7 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         ArrayList<SlideModel> imageList1 = new ArrayList<>(); // Create image list
-        imageList1.add(new SlideModel("https://f8540e.p3cdn2.secureserver.net/wp-content/uploads/BG-NEW-WEB.jpg?time=1686752190", ScaleTypes.FIT));
+        imageList1.add(new SlideModel("https://cdn.pixabay.com/photo/2017/01/10/07/11/blood-1968458_1280.png", ScaleTypes.FIT));
         imageList1.add(new SlideModel("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7TTA9Jkr4ZV4zLpXrIOtAZ7cNkFL18dTX0aknJF3wAiym9ZLrvmY_l7nIIZFVpCsFwA&usqp=CAU",ScaleTypes.FIT));
         imageList1.add(new SlideModel("https://media.istockphoto.com/id/1164063949/photo/tubes-of-blood-sample-for-testing-medical-equipment.jpg?s=612x612&w=0&k=20&c=I0X30LIMzUp3qlLDZQSwAhgnng75R3Bl7WBy1WPSfdM=",ScaleTypes.FIT));
         ImageSlider imageSlider1=view.findViewById(R.id.image_slider1);

@@ -84,7 +84,7 @@ public class YourBloodGroupFragment extends Fragment {
                     bg=userData.getBlood_grp();
 
 
-                    Toast.makeText(getContext(), phone+" "+state+" "+district+" "+bg, Toast.LENGTH_SHORT).show();
+                   // Toast.makeText(getContext(), phone+" "+state+" "+district+" "+bg, Toast.LENGTH_SHORT).show();
                             loadRequest();
                         }
                         else
