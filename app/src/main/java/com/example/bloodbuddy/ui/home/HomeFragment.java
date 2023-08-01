@@ -1,9 +1,12 @@
 package com.example.bloodbuddy.ui.home;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -15,6 +18,7 @@ import android.widget.Toast;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.example.bloodbuddy.HealthTipsActivity;
 import com.example.bloodbuddy.R;
 import com.example.bloodbuddy.UserData;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -36,6 +40,7 @@ public class HomeFragment extends Fragment {
 
     private TextView userId,bloodGrp;
     private String uid=null,bg=null;
+    private CardView card3,card4,card5;
 
 
     @Override
@@ -47,17 +52,43 @@ public class HomeFragment extends Fragment {
 
     userId=view.findViewById(R.id.userId);
     bloodGrp=view.findViewById(R.id.bloodGrp);
-
+    card3=view.findViewById(R.id.card3);
+    card4=view.findViewById(R.id.card4);
+    card5=view.findViewById(R.id.card5);
 
     getUserIdAndBloodGrp();
 
 //    userId.setText(uid);
 
+       card3.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        startActivity(new Intent(getContext(), HealthTipsActivity.class));
+    }
+});
 
-
+        card5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("text/plain"); intent.putExtra(Intent.EXTRA_SUBJECT,  "Check out this cool Application");
+                intent.putExtra(Intent.EXTRA_TEXT, "\uD83E\uDE78 Be a Life Saver! \uD83E\uDE78\uD83D\uDCAA Join me in making a difference by using this incredible blood donation app! \uD83D\uDCF1\uD83D\uDC95 Together, we can save lives and give hope to those in need. ❤️ Download now and be a hero in someone's life! \uD83E\uDDB8\u200D♂️\uD83E\uDDB8\u200D♀️ #DonateBlood #BeAHero #SaveLives: https://drive.google.com/drive/folders/1gc4hDJKEAMs2SNgrB4NfvaHsyFZZX0__?usp=sharing");
+                startActivity(Intent.createChooser(intent ,"Share Via"));
+            }
+        });
+        card4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://twitter.com/BloodBuddy2023");
+            }
+        });
 
 
      return view;
+    }
+    private void gotoUrl(String s) {
+        Uri uri= Uri.parse(s);
+        startActivity(new Intent(Intent.ACTION_VIEW,uri));
     }
 
     @Override

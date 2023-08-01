@@ -13,6 +13,10 @@
         tools:ignore="ExtraText"
         tools:targetApi="31">
         <activity
+            android:name=".HealthTipsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
             android:name=".ui.donate.AcceptActivity"
             android:exported="false" />
         <activity
@@ -60,7 +64,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-
     </application>
 
 </manifest>
