@@ -1,16 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.navigation:navigation-common:2.5.3@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/8390e886f3b4e0c50df86a321b9a1f65/transformed/navigation-common-2.5.3/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/8390e886f3b4e0c50df86a321b9a1f65/transformed/navigation-common-2.5.3/res" />
-      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/8390e886f3b4e0c50df86a321b9a1f65/transformed/navigation-common-2.5.3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8390e886f3b4e0c50df86a321b9a1f65/transformed/navigation-common-2.5.3/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8390e886f3b4e0c50df86a321b9a1f65/transformed/navigation-common-2.5.3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8390e886f3b4e0c50df86a321b9a1f65/transformed/navigation-common-2.5.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9e14e6475a6f7a14b756b9a566aee775/transformed/navigation-common-2.5.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9e14e6475a6f7a14b756b9a566aee775/transformed/navigation-common-2.5.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9e14e6475a6f7a14b756b9a566aee775/transformed/navigation-common-2.5.3/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/modules-2/files-2.1/androidx.navigation/navigation-common/2.5.3/f1d0bca09bca0aefde801761736f097f6710c803/navigation-common-2.5.3-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.navigation/navigation-common/2.5.3/f1d0bca09bca0aefde801761736f097f6710c803/navigation-common-2.5.3-sources.jar!/" />
     </SOURCES>
   </library>

@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'com.google.gms.google-services'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+
 }
 
 android {
@@ -44,6 +46,8 @@ dependencies {
     implementation 'com.github.denzcoskun:ImageSlideshow:0.1.2'
 
     implementation 'com.github.bumptech.glide:glide:4.15.1'
+    //google map
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
 
 // Firebase
     implementation platform('com.google.firebase:firebase-bom:31.3.0')
