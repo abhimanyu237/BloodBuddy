@@ -135,7 +135,6 @@
     <orderEntry type="library" name="Gradle: com.github.bumptech.glide:gifdecoder:4.15.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.exifinterface:exifinterface:1.3.3@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.tracing:tracing:1.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-maps:18.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-analytics:21.2.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-measurement:21.2.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-ads-identifier:18.0.0@aar" level="project" />

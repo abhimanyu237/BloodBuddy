@@ -91,10 +91,6 @@ public class MainActivity extends AppCompatActivity {
 
         return true;
     }
-    void onSelectHospital(){
-        Intent intent=new Intent(this,GoogleMap.class);
-        startActivity(intent);
-    }
     public void onNavigationItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()) {
@@ -106,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, Navigation_Request_History.class));
                 break;
             case R.id.navigation_rate_us:
-                startActivity(new Intent(MainActivity.this, GoogleMap.class));
+                startActivity(new Intent(MainActivity.this, Navigation_RateUs.class));
                 break;
             case R.id.navigation_contact_us:
                 startActivity(new Intent(MainActivity.this, Navigation_ContactUs.class));
