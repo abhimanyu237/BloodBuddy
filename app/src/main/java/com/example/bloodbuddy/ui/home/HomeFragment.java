@@ -95,7 +95,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain"); intent.putExtra(Intent.EXTRA_SUBJECT,  "Check out this cool Application");
-                intent.putExtra(Intent.EXTRA_TEXT, "\uD83E\uDE78 Be a Life Saver! \uD83E\uDE78\uD83D\uDCAA Join me in making a difference by using this incredible blood donation app! \uD83D\uDCF1\uD83D\uDC95 Together, we can save lives and give hope to those in need. ❤️ Download now and be a hero in someone's life! \uD83E\uDDB8\u200D♂️\uD83E\uDDB8\u200D♀️ #DonateBlood #BeAHero #SaveLives: https://drive.google.com/drive/folders/1gc4hDJKEAMs2SNgrB4NfvaHsyFZZX0__?usp=sharing");
+                intent.putExtra(Intent.EXTRA_TEXT, "\uD83E\uDE78 Be a Life Saver! \uD83E\uDE78\uD83D\uDCAA Join me in making a difference by using this incredible blood donation app! \uD83D\uDCF1\uD83D\uDC95 Together, we can save lives and give hope to those in need. ❤️ Download now and be a hero in someone's life! \uD83E\uDDB8\u200D♂️\uD83E\uDDB8\u200D♀️ #DonateBlood #BeAHero #SaveLives: https://drive.google.com/drive/folders/1NAoPCkW3mGp5bIXaacsrL2nJuhT3lOq2?usp=sharing");
                 startActivity(Intent.createChooser(intent ,"Share Via"));
             }
         });
