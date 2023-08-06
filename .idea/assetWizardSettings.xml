@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/water_drop/baseline_water_drop_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/comment_bank/baseline_comment_bank_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -29,7 +29,7 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="890620" />
-                            <entry key="outputName" value="ic_drop" />
+                            <entry key="outputName" value="bank" />
                             <entry key="sourceFile" value="C:\Users\anujk\Downloads\undraw_fill_form_re_cwyf.svg" />
                           </map>
                         </option>

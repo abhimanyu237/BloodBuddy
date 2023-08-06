@@ -1,9 +1,11 @@
 package com.example.bloodbuddy.ui.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -15,8 +17,10 @@ import android.widget.Toast;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.example.bloodbuddy.MapsActivity;
 import com.example.bloodbuddy.R;
 import com.example.bloodbuddy.UserData;
+import com.example.bloodbuddy.exampleActivity;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -36,7 +40,7 @@ public class HomeFragment extends Fragment {
 
     private TextView userId,bloodGrp;
     private String uid=null,bg=null;
-
+    private CardView card2;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -48,8 +52,17 @@ public class HomeFragment extends Fragment {
     userId=view.findViewById(R.id.userId);
     bloodGrp=view.findViewById(R.id.bloodGrp);
 
+    card2=view.findViewById(R.id.card2);
 
     getUserIdAndBloodGrp();
+
+     card2.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View view) {
+             startActivity(new Intent(getContext(), MapsActivity.class));
+         }
+     });
+
 
 //    userId.setText(uid);
 

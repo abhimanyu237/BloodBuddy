@@ -22,6 +22,7 @@
     <string name="send_request">Send Request</string>
     <string name="userid">UserID</string>
     <string name="userid_53421">UserID 53421</string>
+    <string name="google_maps_key">AIzaSyBc0T8OsHm2s19dzbrLZyGsc7i4MP0nX5w</string>
 
     <string-array name="blood_group_array">
         <item>A+</item>
@@ -960,4 +961,5 @@
         <item>Puducherry</item>
         <item>Yanam</item>
     </string-array>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>

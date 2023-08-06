@@ -115,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, Navigation_Help.class));
                 break;
 
+
         }
     }
     public void OnclickLogout(MenuItem item){

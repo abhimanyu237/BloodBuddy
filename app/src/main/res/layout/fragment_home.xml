@@ -146,6 +146,8 @@
                 android:layout_width="130dp"
                 android:layout_height="170dp"
                 android:layout_margin="0dp"
+                android:clickable="true"
+
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="10dp"

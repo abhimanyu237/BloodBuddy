@@ -2,15 +2,15 @@
   <library name="Gradle: androidx.drawerlayout:drawerlayout:1.1.1@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/e1fc3b6bbfe4836618d4d3f6c1cf5ea5/transformed/drawerlayout-1.1.1/annotations.zip!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e1fc3b6bbfe4836618d4d3f6c1cf5ea5/transformed/drawerlayout-1.1.1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ebdb3b76a48fde3f09e5a52666f9dd49/transformed/drawerlayout-1.1.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/e1fc3b6bbfe4836618d4d3f6c1cf5ea5/transformed/drawerlayout-1.1.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/e1fc3b6bbfe4836618d4d3f6c1cf5ea5/transformed/drawerlayout-1.1.1/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/e1fc3b6bbfe4836618d4d3f6c1cf5ea5/transformed/drawerlayout-1.1.1/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e1fc3b6bbfe4836618d4d3f6c1cf5ea5/transformed/drawerlayout-1.1.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e1fc3b6bbfe4836618d4d3f6c1cf5ea5/transformed/drawerlayout-1.1.1/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e1fc3b6bbfe4836618d4d3f6c1cf5ea5/transformed/drawerlayout-1.1.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ebdb3b76a48fde3f09e5a52666f9dd49/transformed/drawerlayout-1.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ebdb3b76a48fde3f09e5a52666f9dd49/transformed/drawerlayout-1.1.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ebdb3b76a48fde3f09e5a52666f9dd49/transformed/drawerlayout-1.1.1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

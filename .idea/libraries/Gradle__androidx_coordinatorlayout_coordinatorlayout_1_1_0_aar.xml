@@ -2,15 +2,15 @@
   <library name="Gradle: androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/47b777ebfa4de5c22746938463d19f0e/transformed/coordinatorlayout-1.1.0/annotations.zip!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/47b777ebfa4de5c22746938463d19f0e/transformed/coordinatorlayout-1.1.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e1684c6e6ae7f6fdc8d683248c85549e/transformed/coordinatorlayout-1.1.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/47b777ebfa4de5c22746938463d19f0e/transformed/coordinatorlayout-1.1.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/47b777ebfa4de5c22746938463d19f0e/transformed/coordinatorlayout-1.1.0/res" />
       <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/47b777ebfa4de5c22746938463d19f0e/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/47b777ebfa4de5c22746938463d19f0e/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/47b777ebfa4de5c22746938463d19f0e/transformed/coordinatorlayout-1.1.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/47b777ebfa4de5c22746938463d19f0e/transformed/coordinatorlayout-1.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e1684c6e6ae7f6fdc8d683248c85549e/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e1684c6e6ae7f6fdc8d683248c85549e/transformed/coordinatorlayout-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e1684c6e6ae7f6fdc8d683248c85549e/transformed/coordinatorlayout-1.1.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
