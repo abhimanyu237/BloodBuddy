@@ -1,18 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.navigation:navigation-ui:2.5.3@aar">
     <CLASSES>
-<<<<<<< HEAD
-      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/c7d56b656bf6d344a4650e901e93f258/transformed/navigation-ui-2.5.3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/c7d56b656bf6d344a4650e901e93f258/transformed/navigation-ui-2.5.3/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/c7d56b656bf6d344a4650e901e93f258/transformed/navigation-ui-2.5.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f4507c0987ae88b24d12b6ff4580da51/transformed/navigation-ui-2.5.3/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f4507c0987ae88b24d12b6ff4580da51/transformed/navigation-ui-2.5.3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f4507c0987ae88b24d12b6ff4580da51/transformed/navigation-ui-2.5.3/AndroidManifest.xml" />
-=======
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/29ba715d353964bdfc9fa21892fd9693/transformed/navigation-ui-2.5.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/29ba715d353964bdfc9fa21892fd9693/transformed/navigation-ui-2.5.3/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/29ba715d353964bdfc9fa21892fd9693/transformed/navigation-ui-2.5.3/jars/classes.jar!/" />
->>>>>>> 257c8b9c7cbf6070c7b8506b759a2bb92f348135
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/6c241612d6049eb754683455006fc2b8/transformed/navigation-ui-2.5.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6c241612d6049eb754683455006fc2b8/transformed/navigation-ui-2.5.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6c241612d6049eb754683455006fc2b8/transformed/navigation-ui-2.5.3/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

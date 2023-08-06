@@ -1,18 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.denzcoskun:ImageSlideshow:0.1.2@aar">
     <CLASSES>
-<<<<<<< HEAD
-      <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/7c0c3873ac245e4781690cc1f141bcf0/transformed/ImageSlideshow-0.1.2/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/7c0c3873ac245e4781690cc1f141bcf0/transformed/ImageSlideshow-0.1.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/7c0c3873ac245e4781690cc1f141bcf0/transformed/ImageSlideshow-0.1.2/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ad762065db96d633cc5f1bd1d41ffb57/transformed/ImageSlideshow-0.1.2/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ad762065db96d633cc5f1bd1d41ffb57/transformed/ImageSlideshow-0.1.2/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ad762065db96d633cc5f1bd1d41ffb57/transformed/ImageSlideshow-0.1.2/jars/classes.jar!/" />
-=======
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5f650d19408dd95c912bfed7c2d8b012/transformed/ImageSlideshow-0.1.2/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5f650d19408dd95c912bfed7c2d8b012/transformed/ImageSlideshow-0.1.2/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/5f650d19408dd95c912bfed7c2d8b012/transformed/ImageSlideshow-0.1.2/jars/classes.jar!/" />
->>>>>>> 257c8b9c7cbf6070c7b8506b759a2bb92f348135
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e0acbbfd7a5714e1140d717c735ad10c/transformed/ImageSlideshow-0.1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e0acbbfd7a5714e1140d717c735ad10c/transformed/ImageSlideshow-0.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e0acbbfd7a5714e1140d717c735ad10c/transformed/ImageSlideshow-0.1.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

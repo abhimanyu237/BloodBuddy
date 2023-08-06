@@ -1,10 +1,9 @@
 package com.example.bloodbuddy.ui.home;
 
 import android.content.Intent;
-<<<<<<< HEAD
-=======
+
 import android.net.Uri;
->>>>>>> 257c8b9c7cbf6070c7b8506b759a2bb92f348135
+
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -21,14 +20,13 @@ import android.widget.Toast;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
-<<<<<<< HEAD
+
 import com.example.bloodbuddy.MapsActivity;
-=======
+
 import com.example.bloodbuddy.HealthTipsActivity;
->>>>>>> 257c8b9c7cbf6070c7b8506b759a2bb92f348135
+
 import com.example.bloodbuddy.R;
 import com.example.bloodbuddy.UserData;
-import com.example.bloodbuddy.exampleActivity;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -48,12 +46,12 @@ public class HomeFragment extends Fragment {
 
     private TextView userId,bloodGrp;
     private String uid=null,bg=null;
-<<<<<<< HEAD
+
     private CardView card2;
-=======
+
     private CardView card3,card4,card5;
 
->>>>>>> 257c8b9c7cbf6070c7b8506b759a2bb92f348135
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -64,14 +62,14 @@ public class HomeFragment extends Fragment {
 
     userId=view.findViewById(R.id.userId);
     bloodGrp=view.findViewById(R.id.bloodGrp);
-<<<<<<< HEAD
+
 
     card2=view.findViewById(R.id.card2);
-=======
+
     card3=view.findViewById(R.id.card3);
     card4=view.findViewById(R.id.card4);
     card5=view.findViewById(R.id.card5);
->>>>>>> 257c8b9c7cbf6070c7b8506b759a2bb92f348135
+
 
     getUserIdAndBloodGrp();
 

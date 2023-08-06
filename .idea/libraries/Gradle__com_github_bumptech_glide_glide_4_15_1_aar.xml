@@ -1,18 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.bumptech.glide:glide:4.15.1@aar">
     <CLASSES>
-<<<<<<< HEAD
-      <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/f5470241f8f4050a242f6d29e1c9296e/transformed/glide-4.15.1/res" />
-      <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/f5470241f8f4050a242f6d29e1c9296e/transformed/glide-4.15.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/f5470241f8f4050a242f6d29e1c9296e/transformed/glide-4.15.1/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/40eecf626cdcbcd64423e94bc21d423d/transformed/glide-4.15.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/40eecf626cdcbcd64423e94bc21d423d/transformed/glide-4.15.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/40eecf626cdcbcd64423e94bc21d423d/transformed/glide-4.15.1/AndroidManifest.xml" />
-=======
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/69e271fb0d05017fd2d9a1150f3a8046/transformed/glide-4.15.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/69e271fb0d05017fd2d9a1150f3a8046/transformed/glide-4.15.1/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/69e271fb0d05017fd2d9a1150f3a8046/transformed/glide-4.15.1/res" />
->>>>>>> 257c8b9c7cbf6070c7b8506b759a2bb92f348135
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f184010adb22984d2794610147fefb9b/transformed/glide-4.15.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f184010adb22984d2794610147fefb9b/transformed/glide-4.15.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f184010adb22984d2794610147fefb9b/transformed/glide-4.15.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/4.15.1/c101f14d17712b35bc090b9b2d3c3ed0fda56514/glide-4.15.1-javadoc.jar!/" />

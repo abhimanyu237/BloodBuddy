@@ -1,18 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.lifecycle:lifecycle-runtime:2.5.1@aar">
     <CLASSES>
-<<<<<<< HEAD
-      <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/bb02bcfba3cbbca509d6c41f06068172/transformed/lifecycle-runtime-2.5.1/res" />
-      <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/bb02bcfba3cbbca509d6c41f06068172/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/bb02bcfba3cbbca509d6c41f06068172/transformed/lifecycle-runtime-2.5.1/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/95de59b582909b24f9f240a5ed01c91b/transformed/lifecycle-runtime-2.5.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/95de59b582909b24f9f240a5ed01c91b/transformed/lifecycle-runtime-2.5.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/95de59b582909b24f9f240a5ed01c91b/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml" />
-=======
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7c64d2850486e0b19cf723be75f3ec1f/transformed/lifecycle-runtime-2.5.1/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7c64d2850486e0b19cf723be75f3ec1f/transformed/lifecycle-runtime-2.5.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7c64d2850486e0b19cf723be75f3ec1f/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml" />
->>>>>>> 257c8b9c7cbf6070c7b8506b759a2bb92f348135
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3c90755280325f72fe20068ddfc41fec/transformed/lifecycle-runtime-2.5.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3c90755280325f72fe20068ddfc41fec/transformed/lifecycle-runtime-2.5.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3c90755280325f72fe20068ddfc41fec/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

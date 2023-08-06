@@ -1,18 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.fragment:fragment-ktx:1.5.4@aar">
     <CLASSES>
-<<<<<<< HEAD
-      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/8ff9042e4bac0940e8589e3ac9f176ad/transformed/fragment-ktx-1.5.4/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/8ff9042e4bac0940e8589e3ac9f176ad/transformed/fragment-ktx-1.5.4/res" />
-      <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/8ff9042e4bac0940e8589e3ac9f176ad/transformed/fragment-ktx-1.5.4/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8dc03515110c01c1d76fc650eec2157b/transformed/fragment-ktx-1.5.4/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8dc03515110c01c1d76fc650eec2157b/transformed/fragment-ktx-1.5.4/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8dc03515110c01c1d76fc650eec2157b/transformed/fragment-ktx-1.5.4/res" />
-=======
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/02ed8375bdee6ad7928332e61ccc4742/transformed/fragment-ktx-1.5.4/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/02ed8375bdee6ad7928332e61ccc4742/transformed/fragment-ktx-1.5.4/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/02ed8375bdee6ad7928332e61ccc4742/transformed/fragment-ktx-1.5.4/res" />
->>>>>>> 257c8b9c7cbf6070c7b8506b759a2bb92f348135
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/26d54b9f6053f36929bc1505caa61aa7/transformed/fragment-ktx-1.5.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/26d54b9f6053f36929bc1505caa61aa7/transformed/fragment-ktx-1.5.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/26d54b9f6053f36929bc1505caa61aa7/transformed/fragment-ktx-1.5.4/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

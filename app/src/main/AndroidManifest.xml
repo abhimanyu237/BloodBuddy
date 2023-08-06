@@ -17,14 +17,7 @@
         android:theme="@style/Theme.BloodBuddy"
         tools:ignore="ExtraText"
         tools:targetApi="31">
-        <activity
-<<<<<<< HEAD
-            android:name=".exampleActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -45,11 +38,11 @@
             android:exported="false"
             android:label="@string/title_activity_maps"
             android:parentActivityName=".MainActivity" />
-=======
+        <activity
             android:name=".HealthTipsActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity"/>
->>>>>>> 257c8b9c7cbf6070c7b8506b759a2bb92f348135
+
         <activity
             android:name=".ui.donate.AcceptActivity"
             android:exported="false" />
