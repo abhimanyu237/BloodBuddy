@@ -4,10 +4,13 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e0acbbfd7a5714e1140d717c735ad10c/transformed/ImageSlideshow-0.1.2/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e0acbbfd7a5714e1140d717c735ad10c/transformed/ImageSlideshow-0.1.2/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e0acbbfd7a5714e1140d717c735ad10c/transformed/ImageSlideshow-0.1.2/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../bloodBuddy_f/BloodBuddy/.gradle/caches/transforms-3/7c0c3873ac245e4781690cc1f141bcf0/transformed/ImageSlideshow-0.1.2/res" />
+      <root url="file://$PROJECT_DIR$/../bloodBuddy_f/BloodBuddy/.gradle/caches/transforms-3/7c0c3873ac245e4781690cc1f141bcf0/transformed/ImageSlideshow-0.1.2/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../bloodBuddy_f/BloodBuddy/.gradle/caches/transforms-3/7c0c3873ac245e4781690cc1f141bcf0/transformed/ImageSlideshow-0.1.2/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.denzcoskun/ImageSlideshow/0.1.2/f80a165fb6de6e09d72a17ffaff23099d202c2e9/ImageSlideshow-0.1.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../bloodBuddy_f/BloodBuddy/.gradle/caches/modules-2/files-2.1/com.github.denzcoskun/ImageSlideshow/0.1.2/f80a165fb6de6e09d72a17ffaff23099d202c2e9/ImageSlideshow-0.1.2-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -2,16 +2,20 @@
   <library name="Gradle: com.github.bumptech.glide:gifdecoder:4.15.1@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1541b9b68dae2a7d85d3d0e0d00fbd4e/transformed/gifdecoder-4.15.1/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../bloodBuddy_f/BloodBuddy/.gradle/caches/transforms-3/ce138a852f450dc7079cbea7134f4bc0/transformed/gifdecoder-4.15.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1541b9b68dae2a7d85d3d0e0d00fbd4e/transformed/gifdecoder-4.15.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1541b9b68dae2a7d85d3d0e0d00fbd4e/transformed/gifdecoder-4.15.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../bloodBuddy_f/BloodBuddy/.gradle/caches/transforms-3/ce138a852f450dc7079cbea7134f4bc0/transformed/gifdecoder-4.15.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../bloodBuddy_f/BloodBuddy/.gradle/caches/transforms-3/ce138a852f450dc7079cbea7134f4bc0/transformed/gifdecoder-4.15.1/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../bloodBuddy_f/BloodBuddy/.gradle/caches/transforms-3/ce138a852f450dc7079cbea7134f4bc0/transformed/gifdecoder-4.15.1/res" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/gifdecoder/4.15.1/e53293e05c7ea418a524f6b7dba10b6d5ee0156/gifdecoder-4.15.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../bloodBuddy_f/BloodBuddy/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/gifdecoder/4.15.1/e53293e05c7ea418a524f6b7dba10b6d5ee0156/gifdecoder-4.15.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/gifdecoder/4.15.1/c4d1351ef6e6b290ff50f782d94e64f21f7a258a/gifdecoder-4.15.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../bloodBuddy_f/BloodBuddy/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/gifdecoder/4.15.1/c4d1351ef6e6b290ff50f782d94e64f21f7a258a/gifdecoder-4.15.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -121,7 +121,7 @@ public class YourBloodGroupFragment extends Fragment {
                     for(DataSnapshot snaps: snapshot.getChildren())
                     {
                         RequestData data=snaps.getValue(RequestData.class);
-                        String s="+91"+data.getAttendee_mobile_number();
+                        String s=data.getAttendee_mobile_number();
                         if(!s.equals(phone) && data.getSelect_blood_grp().equals(bg))
                            list.add(data);
                     }

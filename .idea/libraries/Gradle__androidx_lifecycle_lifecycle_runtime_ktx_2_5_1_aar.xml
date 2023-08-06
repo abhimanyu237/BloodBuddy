@@ -4,10 +4,13 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/86413b0b12a0c789b1b5070f7618d72c/transformed/lifecycle-runtime-ktx-2.5.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/86413b0b12a0c789b1b5070f7618d72c/transformed/lifecycle-runtime-ktx-2.5.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/86413b0b12a0c789b1b5070f7618d72c/transformed/lifecycle-runtime-ktx-2.5.1/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../bloodBuddy_f/BloodBuddy/.gradle/caches/transforms-3/92641d394dc4089c14b2a228cd83fc51/transformed/lifecycle-runtime-ktx-2.5.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../bloodBuddy_f/BloodBuddy/.gradle/caches/transforms-3/92641d394dc4089c14b2a228cd83fc51/transformed/lifecycle-runtime-ktx-2.5.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../bloodBuddy_f/BloodBuddy/.gradle/caches/transforms-3/92641d394dc4089c14b2a228cd83fc51/transformed/lifecycle-runtime-ktx-2.5.1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-runtime-ktx/2.5.1/6d338022f8fa82c24121d5d249fe5daeeb297742/lifecycle-runtime-ktx-2.5.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../bloodBuddy_f/BloodBuddy/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-runtime-ktx/2.5.1/6d338022f8fa82c24121d5d249fe5daeeb297742/lifecycle-runtime-ktx-2.5.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

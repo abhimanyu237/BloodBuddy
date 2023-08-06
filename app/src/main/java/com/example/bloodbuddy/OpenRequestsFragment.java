@@ -67,7 +67,7 @@ public class OpenRequestsFragment extends Fragment {
 
                 if(!snapshot.exists())
                 {
-                    Toast.makeText(getContext(), "No Request Available", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(getContext(), "No Request Available", Toast.LENGTH_SHORT).show();
                 }
                 else
                 {
