@@ -1,16 +1,21 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.lifecycle:lifecycle-viewmodel:2.5.1@aar">
     <CLASSES>
+<<<<<<< HEAD
       <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/3735bb6ae1428666e182b7a966862ab1/transformed/lifecycle-viewmodel-2.5.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/3735bb6ae1428666e182b7a966862ab1/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/3735bb6ae1428666e182b7a966862ab1/transformed/lifecycle-viewmodel-2.5.1/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e2ccff38a66fe6967d01240c300bebfc/transformed/lifecycle-viewmodel-2.5.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e2ccff38a66fe6967d01240c300bebfc/transformed/lifecycle-viewmodel-2.5.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e2ccff38a66fe6967d01240c300bebfc/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml" />
+=======
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/49c441acf51bca3239ab80d2c51c387f/transformed/lifecycle-viewmodel-2.5.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/49c441acf51bca3239ab80d2c51c387f/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/49c441acf51bca3239ab80d2c51c387f/transformed/lifecycle-viewmodel-2.5.1/jars/classes.jar!/" />
+>>>>>>> 257c8b9c7cbf6070c7b8506b759a2bb92f348135
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-viewmodel/2.5.1/5ca998743721e06de4c4b5d48b7bbf0e73a8289b/lifecycle-viewmodel-2.5.1-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-viewmodel/2.5.1/5ca998743721e06de4c4b5d48b7bbf0e73a8289b/lifecycle-viewmodel-2.5.1-sources.jar!/" />
     </SOURCES>
   </library>

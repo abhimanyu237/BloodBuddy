@@ -67,55 +67,61 @@ public class OpenCloseRequestAdapter extends RecyclerView.Adapter<OpenCloseReque
         holder.units.setText(unit);
         holder.address.setText(address);
         holder.date.setText(date);
-         String phone=requestData.getAttendee_mobile_number().trim();
+        String phone=requestData.getAttendee_mobile_number().trim();
         String code=requestData.getRequestId().trim();
 
-         if(check==2){
-             holder.close.setText("Request Closed");
-         }
+        if(check==2){
+            holder.close.setText("Request Closed");
+        }
 
 
 
 
-             holder.close.setOnClickListener(new View.OnClickListener() {
-                 @Override
-                 public void onClick(View v) {
+        holder.close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-                    if(check==1){
-
-
+                if(check==1){
 
 
-                        DatabaseReference databaseRef = FirebaseDatabase.getInstance().getReference();
-                        DatabaseReference openRequestRef = databaseRef.child("userRequests").child(phone).child("openRequests");
-                        openRequestRef.child(code).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
-                           // @SuppressLint("NotifyDataSetChanged")
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
 
-                                if(task.isSuccessful())
-                                {
 
-                                    storeForCloseRequests(phone,code);
-                                    deleteFromRequestsTable(requestData.getState(),requestData.getDistrict(),code);
-                                    notifyDataSetChanged();
-                                     context.startActivity(new Intent(context,Navigation_Request_History.class));
-                                     notifyDataSetChanged();
-//
+                    DatabaseReference databaseRef = FirebaseDatabase.getInstance().getReference();
+                    DatabaseReference openRequestRef = databaseRef.child("userRequests").child(phone).child("openRequests");
+                    Toast.makeText(context, "", Toast.LENGTH_SHORT).show();
+                    openRequestRef.child(code).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                        // @SuppressLint("NotifyDataSetChanged")
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+
+                            if(task.isSuccessful())
+                            {
+
+                                storeForCloseRequests(phone,code);
+                                deleteFromRequestsTable(requestData.getState(),requestData.getDistrict(),code);
+                                notifyDataSetChanged();
+                                try {
+                                    Thread.sleep(100);
+                                } catch (InterruptedException e) {
+                                    Thread.currentThread().interrupt();
                                 }
-                                else
-                                    Toast.makeText(context, "Error", Toast.LENGTH_SHORT).show();
+
+                                context.startActivity(new Intent(context,Navigation_Request_History.class));
+//
                             }
-                        });
+                            else
+                                Toast.makeText(context, "Error", Toast.LENGTH_SHORT).show();
+                        }
+                    });
 
 
 
-                    }
+                }
 
 
 
-                 }
-             });
+            }
+        });
 
 
 

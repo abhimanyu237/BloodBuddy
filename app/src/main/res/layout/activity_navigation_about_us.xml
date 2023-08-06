@@ -2,8 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="#ECEFF1"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Navigation_AboutUs">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -120,7 +122,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="7dp"
                         android:layout_marginTop="4dp"
-                        android:text="\t- Schedule Blood donation\n\t- Raise blood donation awareness\n\t- Create a database of blood donors\n\t- Provide Peer to Peer Blood donation\n\t- Prepare people to be eligible to donate blood\n"
+                        android:text="○ Simple UI\n○ Login with Mobile Number\n○ User Register\n○ Raise Blood Request\n○ Accept Active Request in same District\n○ View Nearby BloodBanks and Hospitals\n○ Request History\n○ Health Tips\n"
                         android:textColor="#000"
                         android:textSize="15sp"/>
                 </LinearLayout>
@@ -176,7 +178,7 @@
                         android:layout_marginLeft="7dp"
                         android:layout_marginTop="4dp"
                         android:textColorLink="@color/purple_700"
-                        android:text="\tabhimanyuprajapati237@gmail.com\n\tgarggautam72@gmail.com\n\tanujkes96@gmail.com\n"
+                        android:text="abhimanyuprajapati237@gmail.com\ngarggautam72@gmail.com\nanujkes96@gmail.com\narush913@gmail.com\n"
                         android:textColor="@color/purple_700"
                         android:textSize="15sp"/>
                 </LinearLayout>
@@ -206,7 +208,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="7dp"
                         android:layout_marginTop="4dp"
-                        android:text="\tANUJ KESARWANI \n\tABHIMANYU PRAJAPATI\n\tGAUTAM AGRAWAL\n"
+                        android:text="ANUJ KESARWANI \nABHIMANYU PRAJAPATI\nGAUTAM AGRAWAL\nARUSH KUMAR\n"
                         android:textColor="#000"
                         android:textSize="15sp"/>
                 </LinearLayout>

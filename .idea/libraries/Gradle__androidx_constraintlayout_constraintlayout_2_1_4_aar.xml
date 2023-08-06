@@ -1,16 +1,21 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.constraintlayout:constraintlayout:2.1.4@aar">
     <CLASSES>
+<<<<<<< HEAD
       <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/9c64b8fd06e36ba576320345bddc89b0/transformed/constraintlayout-2.1.4/res" />
       <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/9c64b8fd06e36ba576320345bddc89b0/transformed/constraintlayout-2.1.4/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/9c64b8fd06e36ba576320345bddc89b0/transformed/constraintlayout-2.1.4/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e8112a7ef46f812e5aaf3d930b823669/transformed/constraintlayout-2.1.4/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e8112a7ef46f812e5aaf3d930b823669/transformed/constraintlayout-2.1.4/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e8112a7ef46f812e5aaf3d930b823669/transformed/constraintlayout-2.1.4/res" />
+=======
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2777327c70e4f870482006048d22030c/transformed/constraintlayout-2.1.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2777327c70e4f870482006048d22030c/transformed/constraintlayout-2.1.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2777327c70e4f870482006048d22030c/transformed/constraintlayout-2.1.4/jars/classes.jar!/" />
+>>>>>>> 257c8b9c7cbf6070c7b8506b759a2bb92f348135
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/modules-2/files-2.1/androidx.constraintlayout/constraintlayout/2.1.4/27e12209e529970f69bc817f349c247ef238fae7/constraintlayout-2.1.4-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.constraintlayout/constraintlayout/2.1.4/27e12209e529970f69bc817f349c247ef238fae7/constraintlayout-2.1.4-sources.jar!/" />
     </SOURCES>
   </library>

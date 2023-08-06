@@ -1,6 +1,7 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.slidingpanelayout:slidingpanelayout:1.2.0@aar">
     <ANNOTATIONS>
+<<<<<<< HEAD
       <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/896db7dbccb2229effbb24c786955c54/transformed/slidingpanelayout-1.2.0/annotations.zip!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8d623320371ff4473d414255f68746ca/transformed/slidingpanelayout-1.2.0/annotations.zip!/" />
     </ANNOTATIONS>
@@ -11,10 +12,17 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8d623320371ff4473d414255f68746ca/transformed/slidingpanelayout-1.2.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8d623320371ff4473d414255f68746ca/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8d623320371ff4473d414255f68746ca/transformed/slidingpanelayout-1.2.0/jars/classes.jar!/" />
+=======
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0b1e9aec84ba966d26311dfb8d2369e8/transformed/slidingpanelayout-1.2.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0b1e9aec84ba966d26311dfb8d2369e8/transformed/slidingpanelayout-1.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0b1e9aec84ba966d26311dfb8d2369e8/transformed/slidingpanelayout-1.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0b1e9aec84ba966d26311dfb8d2369e8/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml" />
+>>>>>>> 257c8b9c7cbf6070c7b8506b759a2bb92f348135
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/modules-2/files-2.1/androidx.slidingpanelayout/slidingpanelayout/1.2.0/6cdf3fd538b995c58d602da7114a92fdeeff92ac/slidingpanelayout-1.2.0-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.slidingpanelayout/slidingpanelayout/1.2.0/6cdf3fd538b995c58d602da7114a92fdeeff92ac/slidingpanelayout-1.2.0-sources.jar!/" />
     </SOURCES>
   </library>

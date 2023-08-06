@@ -1,7 +1,11 @@
 plugins {
     id 'com.android.application'
     id 'com.google.gms.google-services'
+<<<<<<< HEAD
     id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+=======
+
+>>>>>>> 257c8b9c7cbf6070c7b8506b759a2bb92f348135
 }
 
 android {

@@ -49,16 +49,16 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="7dp"
                         android:layout_marginTop="4dp"
-                        android:text="1. How does BloodBuddy work?"
+                        android:text="1. How do I raise a blood request?"
                         android:textColor="#000"
                         android:textStyle="bold"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="7dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginTop="4dp"
-                        android:text="BloodBuddy is designed to connect individuals in need of blood donations with willing donors, and provide information about nearby hospitals and blood banks. You can search for blood donors based on location and blood type, create a profile as a blood donor, find hospitals and blood banks near you, and communicate with potential donors or medical facilities through the app.\n"
+                        android:text="To raise a blood request, follow these steps:\n1. Log in to your account or register if you are a new user.\n2. Navigate to the Raise Blood Request section.\n3. Fill out the required information such as blood type, date , address and contact information.\n4. Submit the request, and it will be displayed as an active request for potential donors to see."
                         android:textColor="@color/black"
                         android:textSize="15dp"/>
                 </LinearLayout>
@@ -79,17 +79,17 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="7dp"
                         android:layout_marginTop="4dp"
-                        android:text="2. How can I search for blood donors?"
+                        android:text="2. Can I accept a blood request in my district?"
                         android:textColor="#000"
                         android:textStyle="bold"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="7dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginTop="4dp"
                         android:textColorLink="@color/purple_700"
-                        android:text="Write Answer\n"
+                        android:text="Yes, you can accept an active blood request in your district. When you see a request listed as active in your district, click on the Accept Request button next to the request."
                         android:textColor="@color/black"
                         android:textSize="15dp"/>
                 </LinearLayout>
@@ -110,17 +110,17 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="7dp"
                         android:layout_marginTop="4dp"
-                        android:text="3. How can I register as a blood donor?"
+                        android:text="3. How can I find nearby blood banks and hospitals?"
                         android:textColor="#000"
                         android:textStyle="bold"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="7dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginTop="4dp"
                         android:textColorLink="@color/purple_700"
-                        android:text="Write Answer\n"
+                        android:text="To find nearby blood banks and hospitals, go to the Nearby Blood Banks and Hospitals section. The app will use your current location or district information to display a list of nearby blood banks and hospitals along with their addresses and contact details."
                         android:textColor="@color/black"
                         android:textSize="15dp"/>
                 </LinearLayout>
@@ -141,17 +141,17 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="7dp"
                         android:layout_marginTop="4dp"
-                        android:text="4. How can I find hospitals and blood banks?"
+                        android:text="4. How do I log in using my mobile number?"
                         android:textColor="#000"
                         android:textStyle="bold"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="7dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginTop="4dp"
                         android:textColorLink="@color/purple_700"
-                        android:text="Write Answer\n"
+                        android:text="To log in using your mobile number, follow these steps:\n1. On the login, page enter your registered mobile number.\n2. Click the Send OTP button.\n3. You will receive a One-Time Password (OTP) on your mobile number.\n4. Enter the OTP in the provided field for authentication.\n5. Click the Verify OTP button.If the OTP is correct, you will be successfully logged into your account"
                         android:textColor="@color/black"
                         android:textSize="15dp"/>
                 </LinearLayout>
@@ -172,17 +172,17 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="7dp"
                         android:layout_marginTop="4dp"
-                        android:text="5. How can I communicate with blood donors, hospitals, or blood banks?"
+                        android:text="5. How can I view my past blood donation requests?"
                         android:textColor="#000"
                         android:textStyle="bold"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="7dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginTop="4dp"
                         android:textColorLink="@color/purple_700"
-                        android:text="Write Answer\n"
+                        android:text="To view your past blood donation requests, go to the Request History section. There, you will find a list of your previous requests with details like the date of the request, status, and any relevant notes or updates."
                         android:textColor="@color/black"
                         android:textSize="15dp"/>
                 </LinearLayout>
@@ -203,17 +203,48 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="7dp"
                         android:layout_marginTop="4dp"
-                        android:text="6. How is my personal information protected?"
+                        android:text="6.  Where can I find health tips related to blood donation?"
                         android:textColor="#000"
                         android:textStyle="bold"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="7dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginTop="4dp"
                         android:textColorLink="@color/purple_700"
-                        android:text="Write Answer\n"
+                        android:text="You can find health tips related to blood donation in the Health Tips section. This section provides useful information on preparing for blood donation and maintaining good health."
+                        android:textColor="@color/black"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="4dp"
+                        android:text="7.  How is my personal information protected?"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="4dp"
+                        android:textColorLink="@color/purple_700"
+                        android:text="At BloodBuddy, we take your privacy seriously. We want to assure you that we do not share your personal data with any third party. Your information is treated with the utmost confidentiality and used solely for the purpose of enhancing your experience within the app\n"
                         android:textColor="@color/black"
                         android:textSize="15dp"/>
                 </LinearLayout>

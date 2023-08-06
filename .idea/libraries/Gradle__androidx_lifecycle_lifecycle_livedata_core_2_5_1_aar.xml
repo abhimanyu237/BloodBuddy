@@ -1,16 +1,21 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.lifecycle:lifecycle-livedata-core:2.5.1@aar">
     <CLASSES>
+<<<<<<< HEAD
       <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/f176915c900da77d000e44f3c41f2854/transformed/lifecycle-livedata-core-2.5.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/f176915c900da77d000e44f3c41f2854/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/f176915c900da77d000e44f3c41f2854/transformed/lifecycle-livedata-core-2.5.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c1615815bd37571215feeeac79cca99f/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c1615815bd37571215feeeac79cca99f/transformed/lifecycle-livedata-core-2.5.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c1615815bd37571215feeeac79cca99f/transformed/lifecycle-livedata-core-2.5.1/res" />
+=======
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b03783187fce79d86a2da1efd818c645/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b03783187fce79d86a2da1efd818c645/transformed/lifecycle-livedata-core-2.5.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b03783187fce79d86a2da1efd818c645/transformed/lifecycle-livedata-core-2.5.1/jars/classes.jar!/" />
+>>>>>>> 257c8b9c7cbf6070c7b8506b759a2bb92f348135
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata-core/2.5.1/38ecd5651d87b6db994df01f93fc72d6e59b846a/lifecycle-livedata-core-2.5.1-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata-core/2.5.1/38ecd5651d87b6db994df01f93fc72d6e59b846a/lifecycle-livedata-core-2.5.1-sources.jar!/" />
     </SOURCES>
   </library>

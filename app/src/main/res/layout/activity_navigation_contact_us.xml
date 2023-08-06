@@ -93,7 +93,7 @@
                         android:linksClickable="true"
                         android:autoLink="all"
                         android:textColorLink="@color/purple_700"
-                        android:text="\tanujkes96@gmail.com\n\n\tabhimanyuprajapati237@gmail.com\n\n\tgarggautam72@gmail.com\n"
+                        android:text="\tanujkes96@gmail.com\n\n\tabhimanyuprajapati237@gmail.com\n\n\tgarggautam72@gmail.com\n\n\tarush913@gmail.com\n"
                         android:textColor="@color/purple_700"
                         android:textSize="15sp"/>
                 </LinearLayout>
@@ -124,7 +124,7 @@
                         android:layout_marginStart="7dp"
                         android:layout_marginTop="4dp"
                         android:textColorLink="@color/purple_700"
-                        android:text="\t+919602769204\n\t+919695356891\n\t+919026663925\n"
+                        android:text="\t+919602769204\n\t+919695356891\n\t+919026663925\n\t+918825223389\n"
                         android:textColor="@color/black"
                         android:textSize="15sp"/>
                 </LinearLayout>

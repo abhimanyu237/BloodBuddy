@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HealthTipsActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ECEFF1"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ECEFF1"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="9dp"
+                    android:text="Health Tips"
+                    android:textColor="#2E7D32"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginVertical="5dp"/>
+               <com.google.android.material.card.MaterialCardView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginTop="10dp">
+                   <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/health_tip1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingTop="9dp"
+                            android:text="1. Eat a healthy diet"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            />
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:scaleType="fitXY"
+                           android:layout_height="300dp"
+                           android:layout_marginVertical="7dp"
+                           android:src="@drawable/health_tips1"/>
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:textAlignment="textStart"
+                           android:layout_marginLeft="5dp"
+                           android:padding="5dp"
+                           android:scrollbarAlwaysDrawVerticalTrack="false"
+                           android:text="Eat a combination of different foods, including fruit, vegetables, legumes, nuts and whole grains. Adults should eat at least five portions (400g) of fruit and vegetables per day. You can improve your intake of fruits and vegetables by always including veggies in your meal; eating fresh fruit and vegetables as snacks; eating a variety of fruits and vegetables; and eating them in season. By eating healthy, you will reduce your risk of malnutrition and noncommunicable diseases (NCDs) such as diabetes, heart disease, stroke and cancer."
+                           android:textColor="@color/black"
+                           android:textSize="14sp" />
+                   </LinearLayout>
+               </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/health_tip2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingTop="9dp"
+                            android:text="2. Consume less salt and sugar"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:layout_height="300dp"
+                            android:layout_marginVertical="7dp"
+                            android:src="@drawable/health_tips2"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="textStart"
+                            android:layout_marginLeft="5dp"
+                            android:padding="5dp"
+                            android:scrollbarAlwaysDrawVerticalTrack="false"
+                            android:text="Filipinos consume twice the recommended amount of sodium, putting them at risk of high blood pressure, which in turn increases the risk of heart disease and stroke. Most people get their sodium through salt. Reduce your salt intake to 5g per day, equivalent to about one teaspoon. It’s easier to do this by limiting the amount of salt, soy sauce, fish sauce and other high-sodium condiments when preparing meals; removing salt, seasonings and condiments from your meal table; avoiding salty snacks; and choosing low-sodium products.\n\nOn the other hand, consuming excessive amounts of sugars increases the risk of tooth decay and unhealthy weight gain. In both adults and children, the intake of free sugars should be reduced to less than 10% of total energy intake. This is equivalent to 50g or about 12 teaspoons for an adult. WHO recommends consuming less than 5% of total energy intake for additional health benefits. You can reduce your sugar intake by limiting the consumption of sugary snacks, candies and sugar-sweetened beverages."
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/health_tip3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingTop="9dp"
+                            android:text="3. Reduce intake of harmful fats"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:layout_height="300dp"
+                            android:layout_marginVertical="7dp"
+                            android:src="@drawable/health_tips3"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="textStart"
+                            android:layout_marginLeft="5dp"
+                            android:padding="5dp"
+                            android:scrollbarAlwaysDrawVerticalTrack="false"
+                            android:text="Fats consumed should be less than 30% of your total energy intake. This will help prevent unhealthy weight gain and NCDs. There are different types of fats, but unsaturated fats are preferable over saturated fats and trans-fats. WHO recommends reducing saturated fats to less than 10% of total energy intake; reducing trans-fats to less than 1% of total energy intake; and replacing both saturated fats and trans-fats to unsaturated fats.\n\nThe preferable unsaturated fats are found in fish, avocado and nuts, and in sunflower, soybean, canola and olive oils; saturated fats are found in fatty meat, butter, palm and coconut oil, cream, cheese, ghee and lard; and trans-fats are found in baked and fried foods, and pre-packaged snacks and foods, such as frozen pizza, cookies, biscuits, and cooking oils and spreads."
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/health_tip4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingTop="9dp"
+                            android:text="4. Avoid harmful use of alcohol"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:layout_height="300dp"
+                            android:layout_marginVertical="7dp"
+                            android:src="@drawable/health_tips4"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="textStart"
+                            android:layout_marginLeft="5dp"
+                            android:padding="5dp"
+                            android:scrollbarAlwaysDrawVerticalTrack="false"
+                            android:text="There is no safe level for drinking alcohol. Consuming alcohol can lead to health problems such as mental and behavioural disorders, including alcohol dependence, major NCDs such as liver cirrhosis, some cancers and heart diseases, as well as injuries resulting from violence and road clashes and collisions"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/health_tip5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingTop="9dp"
+                            android:text="5. Don’t smoke"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:layout_height="300dp"
+                            android:layout_marginVertical="7dp"
+                            android:src="@drawable/health_tips5"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="textStart"
+                            android:layout_marginLeft="5dp"
+                            android:padding="5dp"
+                            android:scrollbarAlwaysDrawVerticalTrack="false"
+                            android:text="Smoking tobacco causes NCDs such as lung disease, heart disease and stroke. Tobacco kills not only the direct smokers but even non-smokers through second-hand exposure. Currently, there are around 15.9 million Filipino adults who smoke tobacco but 7 in 10 smokers are interested or plan to quit.\n\nIf you are currently a smoker, it’s not too late to quit. Once you do, you will experience immediate and long-term health benefits. If you are not a smoker, that’s great! Do not start smoking and fight for your right to breathe tobacco-smoke-free air."
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/health_tip6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingTop="9dp"
+                            android:text="6. Be active"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:layout_height="300dp"
+                            android:layout_marginVertical="7dp"
+                            android:src="@drawable/health_tips6"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="textStart"
+                            android:layout_marginLeft="5dp"
+                            android:padding="5dp"
+                            android:scrollbarAlwaysDrawVerticalTrack="false"
+                            android:text="Physical activity is defined as any bodily movement produced by skeletal muscles that requires energy expenditure. This includes exercise and activities undertaken while working, playing, carrying out household chores, travelling, and engaging in recreational pursuits. The amount of physical activity you need depends on your age group but adults aged 18-64 years should do at least 150 minutes of moderate-intensity physical activity throughout the week. Increase moderate-intensity physical activity to 300 minutes per week for additional health benefits."
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/health_tip7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingTop="9dp"
+                            android:text="7. Check your blood pressure regularly"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:layout_height="300dp"
+                            android:layout_marginVertical="7dp"
+                            android:src="@drawable/health_tips7"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="textStart"
+                            android:layout_marginLeft="5dp"
+                            android:padding="5dp"
+                            android:scrollbarAlwaysDrawVerticalTrack="false"
+                            android:text="Hypertension, or high blood pressure, is called a “silent killer”. This is because many people who have hypertension may not be aware of the problem as it may not have any symptoms. If left uncontrolled, hypertension can lead to heart, brain, kidney and other diseases. Have your blood pressure checked regularly by a health worker so you know your numbers. If your blood pressure is high, get the advice of a health worker. This is vital in the prevention and control of hypertension."
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/health_tip8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingTop="9dp"
+                            android:text="8. Get tested"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:layout_height="300dp"
+                            android:layout_marginVertical="7dp"
+                            android:src="@drawable/health_tips8"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="textStart"
+                            android:layout_marginLeft="5dp"
+                            android:padding="5dp"
+                            android:scrollbarAlwaysDrawVerticalTrack="false"
+                            android:text="Getting yourself tested is an important step in knowing your health status, especially when it comes to HIV, hepatitis B, sexually-transmitted infections (STIs) and tuberculosis (TB). Left untreated, these diseases can lead to serious complications and even death. Knowing your status means you will know how to either continue preventing these diseases or, if you find out that you’re positive, get the care and treatment that you need. Go to a public or private health facility, wherever you are comfortable, to have yourself tested."
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,14 +1,18 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-measurement-base:21.2.1@aar">
     <CLASSES>
+<<<<<<< HEAD
       <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/83fe0c270071244c52abd5a216db78b2/transformed/play-services-measurement-base-21.2.1/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/83fe0c270071244c52abd5a216db78b2/transformed/play-services-measurement-base-21.2.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/83fe0c270071244c52abd5a216db78b2/transformed/play-services-measurement-base-21.2.1/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/eefb44d49a0d99a83474f415a28bb8ca/transformed/play-services-measurement-base-21.2.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/eefb44d49a0d99a83474f415a28bb8ca/transformed/play-services-measurement-base-21.2.1/AndroidManifest.xml" />
+=======
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b66e57b9568708cf623f923f4cf100c0/transformed/play-services-measurement-base-21.2.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b66e57b9568708cf623f923f4cf100c0/transformed/play-services-measurement-base-21.2.1/jars/classes.jar!/" />
+>>>>>>> 257c8b9c7cbf6070c7b8506b759a2bb92f348135
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement-base/21.2.1/8fc72b06ac729971a9d8f38866768136caf2c298/play-services-measurement-base-21.2.1-javadoc.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement-base/21.2.1/8fc72b06ac729971a9d8f38866768136caf2c298/play-services-measurement-base-21.2.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />

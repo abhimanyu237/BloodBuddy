@@ -1,14 +1,18 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-measurement-sdk-api:21.2.1@aar">
     <CLASSES>
+<<<<<<< HEAD
       <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/1e29795090b10404892d62acb96be13f/transformed/play-services-measurement-sdk-api-21.2.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/1e29795090b10404892d62acb96be13f/transformed/play-services-measurement-sdk-api-21.2.1/res" />
       <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/caches/transforms-3/1e29795090b10404892d62acb96be13f/transformed/play-services-measurement-sdk-api-21.2.1/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c270994968bcd5255971c0a495a2af85/transformed/play-services-measurement-sdk-api-21.2.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c270994968bcd5255971c0a495a2af85/transformed/play-services-measurement-sdk-api-21.2.1/AndroidManifest.xml" />
+=======
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f6b5cc9f5b1e5d9e5a3c75aed62d8703/transformed/play-services-measurement-sdk-api-21.2.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f6b5cc9f5b1e5d9e5a3c75aed62d8703/transformed/play-services-measurement-sdk-api-21.2.1/jars/classes.jar!/" />
+>>>>>>> 257c8b9c7cbf6070c7b8506b759a2bb92f348135
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement-sdk-api/21.2.1/8fc72b06ac729971a9d8f38866768136caf2c298/play-services-measurement-sdk-api-21.2.1-javadoc.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement-sdk-api/21.2.1/8fc72b06ac729971a9d8f38866768136caf2c298/play-services-measurement-sdk-api-21.2.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />

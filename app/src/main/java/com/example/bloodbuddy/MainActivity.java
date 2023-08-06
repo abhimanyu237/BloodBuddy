@@ -91,7 +91,6 @@ public class MainActivity extends AppCompatActivity {
 
         return true;
     }
-
     public void onNavigationItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()) {

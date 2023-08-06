@@ -1,6 +1,9 @@
 package com.example.bloodbuddy.ui.request;
 
+import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
+
+import java.util.Objects;
 import java.util.UUID;
 
 import android.content.Intent;
@@ -20,13 +23,17 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.bloodbuddy.MainActivity;
+import com.example.bloodbuddy.Navigation_Profile;
 import com.example.bloodbuddy.R;
+import com.example.bloodbuddy.UserData;
 import com.example.bloodbuddy.authentication.RegisterActivity;
 import com.example.bloodbuddy.ui.home.HomeFragment;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -84,11 +91,9 @@ public class RequestFragment extends Fragment {
         patient_gender=view.findViewById(R.id.patient_gender);
         blood_donate_date=view.findViewById(R.id.blood_donate_date);
         contact_whatsapp=view.findViewById(R.id.contact_whatsapp);
-
-
         attendee_mobile_number.setText(FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber().toString());
         attendee_mobile_number.setEnabled(false);
-
+         datax();
         select_blood_grp=view.findViewById(R.id.select_blood_grp);
         send_request=view.findViewById(R.id.send_request);
         db=FirebaseDatabase.getInstance();
@@ -602,6 +607,40 @@ public class RequestFragment extends Fragment {
         datePickerDialog.show();
     }
 
+    private void datax(){
+        FirebaseDatabase.getInstance().getReference("users")
+                .child(Objects.requireNonNull(Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getPhoneNumber()))
+                .get()
+                .addOnSuccessListener(new OnSuccessListener<DataSnapshot>() {
+                    @SuppressLint("SetTextI18n")
+                    @Override
+                    public void onSuccess(DataSnapshot dataSnapshot) {
+
+                        if (dataSnapshot.exists())
+                        {
+                            UserData userData = dataSnapshot.getValue(UserData.class);
+
+                            assert userData != null;
+
+                            String[] Attendee_name=userData.getName().toString().split("\\s+");
+                            attendee_first_name.setText(Attendee_name[0]);
+                            //attendee_first_name.setEnabled(false);
+                            if(Attendee_name.length>1) {
+                                attendee_last_name.setText(Attendee_name[1]);
+                                //attendee_last_name.setEnabled(false);
+                            }else{
+                                attendee_last_name.setText("NA");
+                            }
+
+//                                attendee_mobile_number.setText(userData.getPhoneNumber().toString());
+//                                attendee_mobile_number.setEnabled(false);
+                        }
+
+
+
+                    }
+                });
+    }
 
 private void StoreDataForUserRequest(String code,RequestData data){
 

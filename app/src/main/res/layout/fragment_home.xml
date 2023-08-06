@@ -280,7 +280,7 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/beneficiaries"
+                    android:src="@drawable/share_icon"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="15dp"
                     />
@@ -288,7 +288,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="BloodBuddy Beneficiaries"
+                    android:text="Invite Friends"
                     android:textStyle="bold"
                     android:padding="10dp"
                     android:textSize="11sp"
